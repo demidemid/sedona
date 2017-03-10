@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
   <header class="main-header">
     <div class="main-header__logo">
-      <img width="102" height="83" src="http://placehold.it/102x83" alt="City of Sedona">
+      <img width="102" height="83" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
     </div>
     <div class="main-header__menu-button">
-      <button class="burger-button">
-        <img width="23" height="21" src="http://placehold.it/23x21" alt="Menu">
-      </button>
+      <button class="burger-button"></button>
     </div>
 
     <nav class="main-header__menu">
+      <div class="main-header__cross-button">
+        <button class="main-header__cross-image"></button>
+      </div>
       <ul class="main-header__list">
         <li class="main-header__item">
           <a class="main-header__link">Главная</a>
@@ -31,14 +33,13 @@
         </li>
       </ul>
     </nav>
-
   </header>
   <main>
     <article class="info-section">
       <div class="info-section__image">
-        <img width="320" height="389" src="http://placehold.it/320x389" alt="Welcome to Sedona">
+        <img width="320" height="389" src="img/bg-back-mobile@1x.jpg" alt="Welcome to Sedona">
       </div>
-      <section class="info-section__facts">
+      <section class="info-section__facts container">
         <h2 class="info-section__title">
           Седона — небольшой
           городок в Аризоне,
@@ -51,7 +52,7 @@
     </article>
 
     <article class="feature">
-      <section class="feature__fact">
+      <section class="feature__fact container">
         <h2 class="feature__title">Настоящий городок</h2>
         <p class="feature__text">— №1 —</p>
         <p class="feature__text">Седона не аттракцион для туристов,
@@ -59,11 +60,11 @@
       </section>
 
       <div class="feature__image">
-        <img width="320" height="260" src="http://placehold.it/320x260" alt="Picture 0f Sedona">
+        <img width="320" height="260" src="img/photo-city@1x.jpg" alt="Picture 0f Sedona">
       </div>
     </article>
 
-    <article class="main-features">
+    <article class="main-features container">
       <section class="main-features__advice">
         <h2 class="main-features__title main-features__title--house">Жилье</h2>
         <p class="main-features__text">Рекомендуем пожить в
@@ -86,7 +87,7 @@
     </article>
 
     <article class="feature">
-      <section class="feature__fact">
+      <section class="feature__fact container">
         <h2 class="feature__title">Там есть мост дьявола</h2>
         <p class="feature__text">— №2 —</p>
         <p class="feature__text">Да, по нему можно пройти! Если вы
@@ -94,38 +95,42 @@
       </section>
 
       <div class="feature__image">
-        <img width="320" height="260" src="http://placehold.it/320x260" alt="Picture 0f Sedona">
+        <img width="320" height="260" src="img/photo-4-mobile@1x.jpg" alt="Picture 0f Sedona">
       </div>
     </article>
 
-    <article class="feature">
-      <section class="feature__fact feature__fact--theme-white">
+    <article class="feature feature--theme-grey">
+      <section class="feature__fact container">
         <h2 class="feature__title">Небольшая площадь</h2>
-        <p class="feature__text">— №3 —</p>
-        <p class="feature__text">Все достопримечательности
+        <p class="feature__text feature__text--theme-grey">— №3 —</p>
+        <p class="feature__text feature__text--theme-grey">Все достопримечательности
           находятся очень близко</p>
       </section>
     </article>
 
-    <article class="feature">
-      <section class="feature__fact feature__fact--theme-white">
+    <article class="feature feature--theme-grey">
+      <section class="feature__fact container">
+        <div class="dividing-line"></div>
+
         <h2 class="feature__title">Красивая дорога</h2>
-        <p class="feature__text">— №4 —</p>
-        <p class="feature__text">Ехать в Седону из Лас-Вегаса
+        <p class="feature__text feature__text--theme-grey">— №4 —</p>
+        <p class="feature__text feature__text--theme-grey">Ехать в Седону из Лас-Вегаса
           совсем не скучно!</p>
       </section>
     </article>
 
-    <article class="feature">
-      <section class="feature__fact feature__fact--theme-white">
+    <article class="feature feature--theme-grey">
+      <section class="feature__fact container">
+        <div class="dividing-line"></div>
+
         <h2 class="feature__title">Мало туристов</h2>
-        <p class="feature__text">— №5 —</p>
-        <p class="feature__text">Большинство едет в Гранд Каньон
+        <p class="feature__text feature__text--theme-grey">— №5 —</p>
+        <p class="feature__text feature__text--theme-grey">Большинство едет в Гранд Каньон
           и толпится там</p>
       </section>
     </article>
 
-    <section class="search-hotel">
+    <section class="search-hotel container">
       <h2 class="search-hotel__title">Заинтересовались?</h2>
       <p class="search-hotel__text">Укажите предполагаемые даты
         поездки, и мы покажем вам лучшие
@@ -135,10 +140,10 @@
     </section>
 
     <article class="map">
-      <img width="320" height="350" src="http://placehold.it/320x260" alt="Map 0f Sedona">
+      <img width="320" height="350" src="img/bg-map-mobile@1x.jpg" alt="Map 0f Sedona">
     </article>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <h2 class="main-footer__title">#visitsedona</h2>
 
     <a class="main-footer__social-button main-footer__social-button--twitter" href="#">Twitter</a>
@@ -146,7 +151,7 @@
     <a class="main-footer__social-button main-footer__social-button--youtube" href="#">YouTube</a>
 
     <p class="main-footer__copyright">
-      Разработано <span class="main-footer__copyright-icon">в HTML Academy</span>
+      Разработано<a class="main-footer__copyright-icon" href="#">в HTML Academy</a>
     </p>
   </footer>
 </body>
