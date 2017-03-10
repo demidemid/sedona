@@ -1,0 +1,50 @@
+.info-section {
+  font-family: $basic-font-family;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 26px;
+}
+
+.info-section__image {
+  width: 320px;
+  height: 389px;
+
+  &--shorter {
+    height: 158px;
+  }
+}
+
+.info-section__facts {
+
+}
+
+.info-section__title {
+  padding-top: 46px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.info-section__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+
+  &--low {
+    text-transform: none;
+    margin-bottom: 33px;
+  }
+}
+
+.info-section__reasons {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  padding-bottom: 32px;
+  margin: 0;
+  margin-top: 40px;
+}

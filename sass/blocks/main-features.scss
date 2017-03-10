@@ -1,0 +1,78 @@
+.main-features {
+  font-family: $basic-font-family;
+  text-transform: uppercase;
+  padding-top: 41px;
+  padding-left: 70px;
+  padding-bottom: 6px;
+}
+
+.main-features__title {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 25px;
+
+  &--house::before {
+    content: "";
+    position: absolute;
+     width: 39px;
+     height: 37px;
+
+    top: -8px;
+    left: -50px;
+
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--souvenir::before {
+    content: "";
+    position: absolute;
+     width: 39px;
+     height: 37px;
+
+    top: -8px;
+    left: -50px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+     width: 39px;
+     height: 37px;
+
+    top: -8px;
+    left: -50px;
+
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+
+
+.main-features__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.feature__image {
+  width: 320px;
+  height: 260px;
+}
