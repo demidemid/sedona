@@ -28,6 +28,8 @@
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 46px;
+
+  @include container;
 }
 
 .feature__title {

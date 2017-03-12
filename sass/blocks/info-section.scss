@@ -14,7 +14,11 @@
 }
 
 .info-section__facts {
+  @include container;
+}
 
+.info-section__promo {
+  @include container;
 }
 
 .info-section__title {

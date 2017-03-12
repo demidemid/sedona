@@ -5,6 +5,8 @@
   line-height: 24px;
   text-align: left;
 
+  @include container;
+
   &::before {
     content: "";
     position: absolute;

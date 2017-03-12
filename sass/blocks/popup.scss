@@ -2,6 +2,8 @@
   display: block;
   text-transform: uppercase;
   border: 1px solid $main-bg-color;
+
+  @include container;
 }
 
 .popup__section {

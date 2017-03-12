@@ -18,6 +18,10 @@
   }
 }
 
+.video-content__footer {
+  @include container;
+}
+
 .video-content__title {
   font-size: 18px;
   font-weight: 700;

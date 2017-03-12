@@ -2,6 +2,8 @@
   padding-top: 33px;
   padding-bottom: 49px;
   text-transform: uppercase;
+
+  @include container;
 }
 
 .search-hotel__title {

@@ -9,6 +9,9 @@
   border: 0;
   padding-bottom: 25px;
   margin: 0;
+
+  @include container;
+
   &::before {
     content: "";
     position: absolute;
@@ -54,7 +57,7 @@
 
 .feedback-form__field-input {
   min-height: 58px;
-  width: 192px;
+  width: 182px;
 
   border: 0;
   background-color: $form-input-bg-color;
@@ -68,7 +71,7 @@
   color: #000000;
 
   &--first-name-longer {
-    width: 230px;
+    width: 220px;
   }
 
   &--contact-info {
