@@ -1,10 +1,23 @@
 .feature {
+  position: relative;
   background-color: $main-bg-color;
   color: #ffffff;
 
   &--theme-grey {
     background-color: #eeeeee;
     color: #000000;
+  }
+
+  &--befor-border::before {
+    content: "";
+    position: absolute;
+
+    top: -1px;
+    left: 20px;
+
+    width: 280px;
+    height: 1px;
+    background-color: #d6d6d6;
   }
 }
 

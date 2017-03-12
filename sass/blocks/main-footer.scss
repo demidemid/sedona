@@ -1,6 +1,5 @@
 .main-footer {
   text-transform: uppercase;
-  text-align: center;
   line-height: 26px;
   color: #000000;
 }
@@ -17,23 +16,21 @@
   height: 48px;
   background-color: $main-bg-color;
   font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+
   }
 
   &--facebook {
     background-image: url("../img/icon-facebook.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+
   }
 
   &--youtube {
     background-image: url("../img/icon-youtube.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 

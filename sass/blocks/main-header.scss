@@ -1,7 +1,6 @@
 .main-header {
   display: flex;
   position: relative;
-  align-items: center;
   justify-content: flex-end;
   height: 56px;
   width: 320px;
@@ -11,59 +10,12 @@
   position: absolute;
 
   top: 0;
-  right: 109px;
-  left: 109px;
+  right: calc(100% / 2);
+  transform: translateX(50%);
+  z-index: 10;
 }
 
 .main-header__menu-button {
+  margin: auto 0;
   margin-right: 20px;
-}
-
-.main-header__menu {
-  display: none;
-  position: absolute;
-  width: 100%;
-
-  top: -16px;
-}
-
-.main-header__list {
-  padding: 0;
-}
-
-.main-header__item {
-  display: block;
-  background-color: $main-bg-color;
-  border-bottom: 1px solid $menu-bottom-border-color;
-  font-family: $basic-font-family;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 40px;
-  text-align: center;
-}
-
-.main-header__link {
-  text-decoration: none;
-  color: $menu-font-color;
-
-}
-
-.main-header__cross-button {
-  position: relative;
-}
-
-.main-header__cross-image {
-  position: absolute;
-
-  border: 0;
-  background: transparent;
-
-  width: 22px;
-  height: 22px;
-
-  top: 25px;
-  right: 20px;
-
-  background-image: url("../img/icon-cross.svg");
 }

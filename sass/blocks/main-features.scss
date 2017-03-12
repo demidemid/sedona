@@ -6,6 +6,10 @@
   padding-bottom: 6px;
 }
 
+.main-features__advice {
+  text-align: left;
+}
+
 .main-features__title {
   position: relative;
   font-size: 18px;
@@ -18,8 +22,8 @@
   &--house::before {
     content: "";
     position: absolute;
-     width: 39px;
-     height: 37px;
+    width: 39px;
+    height: 37px;
 
     top: -8px;
     left: -50px;
@@ -33,8 +37,8 @@
   &--souvenir::before {
     content: "";
     position: absolute;
-     width: 39px;
-     height: 37px;
+    width: 39px;
+    height: 37px;
 
     top: -8px;
     left: -50px;
@@ -48,8 +52,8 @@
   &--food::before {
     content: "";
     position: absolute;
-     width: 39px;
-     height: 37px;
+    width: 39px;
+    height: 37px;
 
     top: -8px;
     left: -50px;

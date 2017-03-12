@@ -1,9 +1,21 @@
 .video-content {
+  position: relative;
   font-family: $basic-font-family;
   text-transform: uppercase;
-  text-align: center;
   padding-top: 39px;
   padding-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -1px;
+    left: 0;
+
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
 }
 
 .video-content__title {

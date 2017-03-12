@@ -6,6 +6,22 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="body">
+  <nav class="main-menu">
+    <ul class="main-menu__list">
+      <li class="main-menu__item main-menu__item--after-cross-button">
+        <a class="main-menu__link" href="./index.html">Главная</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Фото и видео</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Форма отзыва</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">HTML Academy</a>
+      </li>
+    </ul>
+  </nav>
   <header class="main-header">
     <div class="main-header__logo">
       <img width="102" height="83" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
@@ -13,24 +29,6 @@
     <div class="main-header__menu-button">
       <button class="burger-button"></button>
     </div>
-
-    <nav class="main-header__menu">
-      <ul class="main-header__list">
-        <li class="main-header__item">
-          <a class="main-header__link" href="./index.html">Главная</a>
-        </li>
-        <li class="main-header__item">
-          <a class="main-header__link" href="#">Фото и видео</a>
-        </li>
-        <li class="main-header__item">
-          <a class="main-header__link" href="#">Форма отзыва</a>
-        </li>
-        <li class="main-header__item">
-          <a class="main-header__link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-
   </header>
   <main>
     <article class="info-section">
@@ -46,13 +44,13 @@
           политике и экономике.
         </p>
       </section>
-
-      <div class="dividing-line"></div>
     </article>
 
     <article class="picture container">
       <div class="picture__image">
-        <img width="280" height="280" src="img/photo-1-mobile@1x.jpg" alt="Sedona">
+        <a class="picture__link" href="#">
+          <img width="280" height="280" src="img/photo-1-mobile@1x.jpg" alt="Sedona">
+        </a>
       </div>
 
       <section class="picture__footer">
@@ -67,11 +65,11 @@
       </div>
     </article>
 
-    <div class="dividing-line"></div>
-
     <article class="picture container">
       <div class="picture__image">
-        <img width="280" height="280" src="img/photo-2-mobile@1x.jpg" alt="Sedona">
+        <a class="picture__link" href="#">
+          <img width="280" height="280" src="img/photo-2-mobile@1x.jpg" alt="Sedona">
+        </a>
       </div>
 
       <section class="picture__footer">
@@ -86,11 +84,11 @@
       </div>
     </article>
 
-    <div class="dividing-line"></div>
-
     <article class="picture container">
       <div class="picture__image">
-        <img width="280" height="280" src="img/photo-3-mobile@1x.jpg" alt="Sedona">
+        <a class="picture__link" href="#">
+          <img width="280" height="280" src="img/photo-3-mobile@1x.jpg" alt="Sedona">
+        </a>
       </div>
 
       <section class="picture__footer">
@@ -105,11 +103,11 @@
       </div>
     </article>
 
-    <div class="dividing-line"></div>
-
     <article class="picture container">
       <div class="picture__image">
-        <img width="280" height="280" src="img/photo-4-mobile@1x.jpg" alt="Sedona">
+        <a class="picture__link" href="#">
+          <img width="280" height="280" src="img/photo-4-mobile@1x.jpg" alt="Sedona">
+        </a>
       </div>
 
       <section class="picture__footer">
@@ -123,8 +121,6 @@
         <span class="picture__count">254</span>
       </div>
     </article>
-
-    <div class="dividing-line"></div>
 
     <article class="video-content">
       <section class="video-content__footer  container">
