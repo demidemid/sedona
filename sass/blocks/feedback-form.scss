@@ -2,6 +2,7 @@
   line-height: 26px;
   padding-bottom: 47px;
   text-align: left;
+
 }
 
 .feedback-form__contact-info {
@@ -122,16 +123,21 @@
 
 .feedback-form__button {
   display: block;
+  min-height: 58px;
+  width: 280px;
   border: 0;
   background-color: $main-bg-color;
   color: #ffffff;
-  min-height: 58px;
-  width: 280px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
   padding-top: 21px;
   padding-bottom: 21px;
   box-sizing: border-box;
-  margin: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+
+
 }
