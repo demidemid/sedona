@@ -1,0 +1,21 @@
+.main-header {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  height: 56px;
+  width: 320px;
+}
+
+.main-header__logo {
+  position: absolute;
+
+  top: 0;
+  right: calc(100% / 2);
+  transform: translateX(50%);
+  z-index: 10;
+}
+
+.main-header__menu-button {
+  margin: auto 0;
+  margin-right: 20px;
+}

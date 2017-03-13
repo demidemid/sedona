@@ -1,0 +1,67 @@
+.picture {
+  position: relative;
+  font-family: $basic-font-family;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+
+  @include container;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -1px;
+    left: 0;
+
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+}
+
+.picture__image {
+  padding: 22px 0;
+}
+
+.picture__footer {
+
+}
+
+.picture__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.picture__text {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.picture__likes-counter {
+  padding-bottom: 21px;
+}
+
+.picture__like-button {
+  border: 0;
+  background: transparent;
+
+  width: 23px;
+  height: 22px;
+
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.picture__count {
+  margin-left: 9px;
+  font-weight: 700;
+  color: #000000;
+}

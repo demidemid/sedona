@@ -1,0 +1,41 @@
+.main-menu {
+  display: block;
+  width: 320px;
+  top: 0px;
+}
+
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  display: block;
+  position: relative;
+  background-color: $main-bg-color;
+  border-bottom: 1px solid $menu-bottom-border-color;
+  font-family: $basic-font-family;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+
+  &--after-cross-button::after {
+    content: "";
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/icon-cross.svg");
+    cursor: pointer;
+  }
+}
+
+.main-menu__link {
+  text-decoration: none;
+  color: $menu-font-color;
+}

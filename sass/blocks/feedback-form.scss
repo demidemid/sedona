@@ -1,0 +1,143 @@
+.feedback-form {
+  line-height: 26px;
+  padding-bottom: 47px;
+  text-align: left;
+
+}
+
+.feedback-form__contact-info {
+  position: relative;
+  border: 0;
+  padding-bottom: 25px;
+  margin: 0;
+
+  @include container;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+}
+
+.feedback-form__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.feedback-form__field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 13px;
+
+  &--padding {
+    padding-left: 27px;
+    padding-bottom: 7px;
+  }
+
+  &--radio {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: none;
+  }
+}
+
+.feedback-form__field-input {
+  min-height: 58px;
+  width: 182px;
+
+  border: 0;
+  background-color: $form-input-bg-color;
+  box-sizing: border-box;
+  margin-left: 15px;
+  padding-left: 22px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+
+  &--first-name-longer {
+    width: 220px;
+  }
+
+  &--contact-info {
+    margin-left: 0;
+    width: 222px;
+  }
+
+  &--textarea {
+    width: 280px;
+    min-height: 160px;
+    margin-left: 0;
+    margin-top: 17px;
+  }
+}
+
+.feedback-form__field-container {
+  display: flex;
+
+}
+
+.feedback-form__field-icon {
+  display: inline-block;
+  border: 0;
+
+  height: 58px;
+  width: 58px;
+  padding: 0;
+  margin: 0;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+
+  &--telephone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.feedback-form__error-message {
+  color: #ff5c5c;
+  text-transform: none;
+  padding-left: 27px;
+}
+
+.feedback-form__button {
+  display: block;
+  min-height: 58px;
+  width: 280px;
+  border: 0;
+  background-color: $main-bg-color;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  padding-top: 21px;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+
+
+}
