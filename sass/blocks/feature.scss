@@ -1,12 +1,6 @@
 .feature {
   position: relative;
-  background-color: $main-bg-color;
   color: #ffffff;
-
-  &--theme-grey {
-    background-color: #eeeeee;
-    color: #000000;
-  }
 
   &--befor-border::before {
     content: "";
@@ -26,8 +20,15 @@
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+  background-color: $main-bg-color;
   text-transform: uppercase;
   padding-bottom: 46px;
+  box-sizing: border-box;
+
+  &--theme-grey {
+    background-color: #eeeeee;
+    color: #000000;
+  }
 
   @include container;
 }
@@ -45,5 +46,35 @@
 
   &--theme-grey {
     color: #333333;
+  }
+}
+
+.feature__image {
+  display: block;
+  margin: 0 auto;
+  height: 260px;
+  width: 320px;
+}
+
+.feature__picture {
+  height: 260px;
+  width: 320px;
+}
+
+@media #{$tablet-widths} {
+  .feature {
+    display: flex;
+  }
+
+  .feature__fact {
+    width: 256px;
+  }
+
+  .feature__image {
+    margin: 0
+  }
+
+  .feature__picture {
+    width: 512px;
   }
 }

@@ -1,7 +1,6 @@
 .main-menu {
   display: block;
-  width: 320px;
-  top: 0px;
+  min-width: 320px;
 }
 
 .main-menu__list {
@@ -38,4 +37,53 @@
 .main-menu__link {
   text-decoration: none;
   color: $menu-font-color;
+}
+
+@media #{$tablet-widths} {
+  .main-menu__list {
+    display: flex;
+    width: 768px;
+  }
+
+  .main-menu__item {
+    min-height: 56px;
+    display: inline-block;
+    background-color: #ffffff;
+    border: 0;
+
+    font-size: 14px;
+    line-height: 26px;
+
+    &--main {
+      margin-left: 49px;
+    }
+
+    &--photo-video {
+      margin-left: 77px;
+    }
+
+    &--feedback-form {
+      margin-left: auto;;
+    }
+
+    &--html-academy {
+      margin-left: 49px;
+      margin-right: 26px;
+    }
+
+    &--after-cross-button::after {
+      display: none;
+    }
+  }
+
+  .main-menu__link {
+    display: block;
+    padding: 15px 0;
+    color: #000000;
+  }
+
+  .main-header__menu-button {
+    display: none;
+  }
+
 }

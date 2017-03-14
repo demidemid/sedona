@@ -5,8 +5,9 @@
 }
 
 .info-section__image {
-  width: 320px;
+  width: 100%;
   height: 389px;
+  margin: 0 auto;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
@@ -26,7 +27,7 @@
 }
 
 .info-section__title {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 46px;
   font-size: 18px;
   font-weight: 700;
@@ -54,4 +55,11 @@
   margin: 0;
   margin-top: 40px;
   margin-bottom: 32px;
+}
+
+@media #{$tablet-widths} {
+  .info-section__title {
+    width: 510px;
+    font-size: 21px;
+  }
 }
