@@ -49,8 +49,6 @@
   }
 }
 
-
-
 .main-features__text {
   font-size: 14px;
   line-height: 21px;
@@ -63,4 +61,48 @@
 .feature__image {
   width: 320px;
   height: 260px;
+}
+
+@media #{$tablet-widths} {
+  .main-features {
+    display: flex;
+    padding: 0;
+    padding-top: 164px;
+    justify-content: center;
+  }
+
+  .main-features__advice {
+    text-align: center;
+    width: 256px;
+    padding: 0 45px;
+
+    &--house {
+      order: 1;
+    }
+
+    &--souvenir {
+      order: 3;
+    }
+
+    &--food {
+      order: 2;
+    }
+  }
+
+  .main-features__title {
+    font-size: 21px;
+    margin-bottom: 30px;
+
+    &::before {
+      width: 75px;
+      height: 72px;
+
+      top: -120px;
+      left: 45px;
+    }
+  }
+
+  .main-features__text {
+    margin-bottom: 70px;
+  }
 }
