@@ -64,14 +64,45 @@
 @media #{$tablet-widths} {
   .feature {
     display: flex;
+
+
+    &--befor-border::before {
+      display: none;
+    }
   }
 
   .feature__fact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 256px;
+    padding-top: 48px;
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-bottom: 48px;
+
+
+    &--devil-bridge {
+      order: 2;
+    }
+  }
+
+  .feature__title {
+    padding-top: 0;
+  }
+
+  .feature__text {
+    margin-top: 18px;
+    margin-bottom: 0px;
   }
 
   .feature__image {
-    margin: 0
+    width: 512px;
+    margin: 0;
+
+    &--devil-bridge {
+      order: 1
+    }
   }
 
   .feature__picture {

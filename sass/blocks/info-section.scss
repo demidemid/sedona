@@ -5,7 +5,7 @@
 }
 
 .info-section__image {
-  width: 100%;
+  width: 320px;
   height: 389px;
   margin: 0 auto;
 
@@ -61,5 +61,9 @@
   .info-section__title {
     width: 510px;
     font-size: 21px;
+  }
+
+  .info-section__image {
+    width: 768px;
   }
 }

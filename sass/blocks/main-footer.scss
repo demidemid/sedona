@@ -55,3 +55,16 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media #{$tablet-widths} {
+  .main-footer {
+    display: flex;
+    min-height: 120px;
+    width: 768px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 0 60px;
+  }
+}

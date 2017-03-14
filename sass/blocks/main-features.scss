@@ -58,11 +58,6 @@
   margin-bottom: 35px;
 }
 
-.feature__image {
-  width: 320px;
-  height: 260px;
-}
-
 @media #{$tablet-widths} {
   .main-features {
     display: flex;
@@ -75,6 +70,7 @@
     text-align: center;
     width: 256px;
     padding: 0 45px;
+    box-sizing: border-box;
 
     &--house {
       order: 1;

@@ -2,3 +2,11 @@
   width: 320px;
   height: 350px;
 }
+
+@media #{$tablet-widths} {
+  .map {
+    width: 768px;
+
+    background-color: #f4f3f0;
+  }
+}
