@@ -69,3 +69,9 @@
     background-color: black;
   }
 }
+
+@media #{$desktop-widths} {
+  .video-content__video-clip {
+    width: 800px;
+  }
+}
