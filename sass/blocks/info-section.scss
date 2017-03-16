@@ -21,15 +21,16 @@
 
 .info-section__facts {
   @include container;
+  padding-top: 46px;
 }
 
 .info-section__promo {
   @include container;
+  padding-top: 45px;
 }
 
 .info-section__title {
   margin: 0 auto;
-  margin-top: 46px;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
@@ -59,13 +60,38 @@
 }
 
 @media #{$tablet-widths} {
+  .info-section__facts {
+    padding-top: 50px;
+  }
+
+  .info-section__promo {
+    padding-top: 75px;
+  }
+
   .info-section__title {
     width: 510px;
     font-size: 21px;
+
+    &--promo {
+      font-size: 30px;
+    }
   }
 
+  .info-section__text {
+    margin-left: auto;
+    margin-right: auto;
+
+    &--low {
+      width: 430px;
+      margin-bottom: 75px;
+    }
+  }
   .info-section__image {
     width: 768px;
+
+    &--shorter {
+      height: 290px;
+    }
   }
 
   .info-section__reasons {
@@ -81,5 +107,9 @@
 
   .info-section__reasons {
     margin-top: 50px;
+  }
+
+  .info-section__promo {
+    padding-top: 114px;
   }
 }

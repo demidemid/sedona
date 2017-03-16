@@ -7,22 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="body">
-  <nav class="main-menu">
-    <ul class="main-menu__list">
-      <li class="main-menu__item main-menu__item--after-cross-button">
-        <a class="main-menu__link" href="./index.html">Главная</a>
-      </li>
-      <li class="main-menu__item">
-        <a class="main-menu__link" href="#">Фото и видео</a>
-      </li>
-      <li class="main-menu__item">
-        <a class="main-menu__link" href="#">Форма отзыва</a>
-      </li>
-      <li class="main-menu__item">
-        <a class="main-menu__link" href="#">HTML Academy</a>
-      </li>
-    </ul>
-  </nav>
+
   <header class="main-header">
     <div class="main-header__logo">
       <img width="102" height="83" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
@@ -30,18 +15,33 @@
     <div class="main-header__menu-button">
       <button class="burger-button"></button>
     </div>
+
+    <nav class="main-menu main-header--menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item main-menu__item--main main-menu__item--after-cross-button">
+          <a class="main-menu__link">Главная</a>
+        </li>
+        <li class="main-menu__item main-menu__item--photo-video">
+          <a class="main-menu__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-menu__item main-menu__item--feedback-form">
+          <a class="main-menu__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="main-menu__item main-menu__item--html-academy">
+          <a class="main-menu__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
     <article class="info-section">
-      <div class="info-section__image info-section__image--shorter">
-        <img width="320" height="158" src="img/bg-back-mobile@1x.jpg" alt="Sedona">
-      </div>
+      <div class="info-section__image info-section__image--shorter"></div>
 
       <section class="info-section__promo">
-        <h2 class="info-section__title">Фото и видео</h2>
+        <h2 class="info-section__title info-section__title--promo">Фото и видео</h2>
 
         <p class="info-section__text info-section__text--low">Не можете решиться на путешествие из-за
-          курса? Фотографии помогут вам забыть о
+          курса? Фотографии&nbsp;помогут вам забыть о
           политике и экономике.
         </p>
       </section>
