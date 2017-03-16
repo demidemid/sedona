@@ -39,3 +39,33 @@
   margin-top: 0;
   margin-bottom: 40px;
 }
+
+@media #{$tablet-widths} {
+  .video-content {
+    padding-top: 68px;
+    padding-bottom: 34px;
+    margin: 0 auto;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .video-content__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .video-content__text {
+    width: 420px;
+    margin: 0 auto;
+    margin-bottom: 78px;
+  }
+
+  .video-content__video-clip {
+    height: 500px;
+    width: 648px;
+
+    background-color: black;
+  }
+}

@@ -12,8 +12,16 @@
   margin-top: 40px;
 }
 
+.main-footer__social {
+  display: flex;
+  height: 48px;
+  width: 151px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
 .main-footer__social-button {
-  display: inline-block;
+  display: block;
   width: 46px;
   height: 48px;
   background-color: $main-bg-color;
