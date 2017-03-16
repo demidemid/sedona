@@ -20,12 +20,14 @@
 
   @media #{$tablet-widths} {
     top: 0;
-    left: 333px;
+    left: 0;
+    right: 0;
   }
 
   @media #{$desktop-widths} {
     top: 0;
-    left: 507px;
+    left: 0;
+    right: 0;
   }
 }
 
