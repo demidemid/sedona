@@ -10,6 +10,7 @@
   margin: 0 auto;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #e4f1f9;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -65,5 +66,20 @@
 
   .info-section__image {
     width: 768px;
+  }
+
+  .info-section__reasons {
+    margin-top: 40px;
+    margin-bottom: 55px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .info-section__image {
+    width: 1200px;
+  }
+
+  .info-section__reasons {
+    margin-top: 50px;
   }
 }

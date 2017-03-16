@@ -67,4 +67,20 @@
 
     padding: 0 60px;
   }
+
+  .main-footer__title {
+    margin: 0;
+  }
+
+  .main-footer__copyright {
+    margin: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-footer {
+    width: 1200px;
+
+    padding: 0 132px;
+  }
 }

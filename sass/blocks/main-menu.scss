@@ -85,5 +85,34 @@
   .main-header__menu-button {
     display: none;
   }
+}
 
+@media #{$desktop-widths} {
+  .main-menu__list {
+    width: 1200px;
+  }
+
+  .main-menu__item {
+
+    &--main {
+      margin-left: 91px;
+    }
+
+    &--photo-video {
+      margin-left: 161px;
+    }
+
+    &--feedback-form {
+      margin-left: auto;
+    }
+
+    &--html-academy {
+      margin-left: 137px;
+      margin-right: 70px;
+    }
+
+    &--after-cross-button::after {
+      display: none;
+    }
+  }
 }

@@ -107,3 +107,9 @@
     margin-bottom: 70px;
   }
 }
+
+@media #{$desktop-widths} {
+  .main-features__advice {
+    width: 400px;
+  }
+}

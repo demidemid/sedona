@@ -2,6 +2,7 @@
   padding-top: 33px;
   padding-bottom: 49px;
   text-transform: uppercase;
+  margin: 0 auto;
 
   @include container;
 }
@@ -39,9 +40,18 @@
 
 @media #{$tablet-widths} {
   .search-hotel {
-    padding-top: 58px;
-    padding-left: 155px;
-    padding-right: 155px;
-    padding-bottom: 58px;
+    width: 458px;
+    padding: 58px 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .search-hotel {
+    padding-bottom: 68px;
+  }
+
+  .search-hotel__text {
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
 }
