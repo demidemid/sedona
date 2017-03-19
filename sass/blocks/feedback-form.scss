@@ -431,3 +431,63 @@
     margin-top: 25px;
   }
 }
+
+@media #{$desktop-widths} {
+  .feedback-form {
+    width: 960px;
+  }
+
+  .feedback-form__contact-info {
+    width: 960px;
+
+    &--impression {
+      width: 480px;
+    }
+
+    &--full-name {
+      width: 480px;
+      padding-left: 78px;
+    }
+
+    &--contacts {
+      width: 960px;
+      font-size: 0px;
+    }
+  }
+
+  .feedback-form__title {
+
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+
+    &--impression {
+      padding-left: 80px;
+    }
+  }
+
+  .feedback-form__field-input {
+    width: 312px;
+
+    &--first-name-longer {
+      width: 350px;
+    }
+  }
+
+
+  .feedback-form__column {
+    display: inline-block;
+    width: 480px;
+  }
+
+  .feedback-form__error-message {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    font-size: 14px;
+  }
+}

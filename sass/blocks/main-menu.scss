@@ -47,6 +47,7 @@
 
   .main-menu__item {
     min-height: 56px;
+    width: 20%;
     display: inline-block;
     background-color: #ffffff;
     border: 0;
@@ -54,21 +55,8 @@
     font-size: 14px;
     line-height: 26px;
 
-    &--main {
-      margin-left: 49px;
-    }
-
-    &--photo-video {
-      margin-left: 77px;
-    }
-
-    &--feedback-form {
+    &--third {
       margin-left: auto;
-    }
-
-    &--html-academy {
-      margin-left: 49px;
-      margin-right: 26px;
     }
 
     &--after-cross-button::after {

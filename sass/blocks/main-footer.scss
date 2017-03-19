@@ -69,6 +69,7 @@
 @media #{$tablet-widths} {
   .main-footer {
     display: flex;
+    position: relative;
     min-height: 120px;
     width: 768px;
     justify-content: space-between;
@@ -85,6 +86,12 @@
   .main-footer__copyright {
     margin: 0;
   }
+
+  .main-footer__social {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }
 
 @media #{$desktop-widths} {
@@ -93,9 +100,5 @@
 
     padding-left: 132px;
     padding-right: 44px;
-  }
-
-  .main-footer__social {
-    transform: translateX(-50px);
   }
 }

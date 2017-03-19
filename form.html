@@ -18,16 +18,16 @@
 
     <nav class="main-menu main-header--menu">
       <ul class="main-menu__list">
-        <li class="main-menu__item main-menu__item--main main-menu__item--after-cross-button">
+        <li class="main-menu__item main-menu__item--after-cross-button">
           <a class="main-menu__link" href="./index.html">Главная</a>
         </li>
-        <li class="main-menu__item main-menu__item--photo-video">
+        <li class="main-menu__item">
           <a class="main-menu__link" href="./photo.html">Фото и видео</a>
         </li>
-        <li class="main-menu__item main-menu__item--feedback-form">
+        <li class="main-menu__item main-menu__item--third">
           <a class="main-menu__link">Форма отзыва</a>
         </li>
-        <li class="main-menu__item main-menu__item--html-academy">
+        <li class="main-menu__item">
           <a class="main-menu__link" href="#">HTML Academy</a>
         </li>
       </ul>
@@ -62,18 +62,24 @@
 
       <fieldset class="feedback-form__contact-info feedback-form__contact-info--contacts">
         <legend class="feedback-form__title feedback-form__title--contacts">Контактная информация:</legend>
-        <label class="feedback-form__field-label feedback-form__field-label--padding" for="telephone">Контактный телефон*:</label>
-          <div class="feedback-form__field-container">
-            <input class="feedback-form__field-input feedback-form__field-input--contact-info" type="tel" id="telephone" name="telephone" placeholder="Введите телефон" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-            <span class="feedback-form__field-icon feedback-form__field-icon--telephone"></span>
-          </div>
-          <span class="feedback-form__error-message">Ошибка, перепроверьте номер</span>
 
+        <div class="feedback-form__column">
+        <label class="feedback-form__field-label feedback-form__field-label--padding" for="telephone">Контактный телефон*:</label>
+        <div class="feedback-form__field-container">
+          <input class="feedback-form__field-input feedback-form__field-input--contact-info" type="tel" id="telephone" name="telephone" placeholder="Введите телефон" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+          <span class="feedback-form__field-icon feedback-form__field-icon--telephone"></span>
+        </div>
+        <span class="feedback-form__error-message">Ошибка, перепроверьте номер</span>
+        </div>
+
+        <div class="feedback-form__column">
         <label class="feedback-form__field-label feedback-form__field-label--padding" for="email">Электронная почта*:</label>
-          <div class="feedback-form__field-container">
-            <input class="feedback-form__field-input feedback-form__field-input--contact-info" id="email" type="email" name="email" placeholder="Введите e-mail" required>
-            <span class="feedback-form__field-icon feedback-form__field-icon--email"></span>
-          </div>
+        <div class="feedback-form__field-container">
+          <input class="feedback-form__field-input feedback-form__field-input--contact-info" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+          <span class="feedback-form__field-icon feedback-form__field-icon--email"></span>
+        </div>
+        </div>
+
       </fieldset>
 
       <fieldset class="feedback-form__contact-info feedback-form__contact-info--impression">
