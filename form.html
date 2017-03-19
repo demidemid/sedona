@@ -40,16 +40,15 @@
       <section class="info-section__promo">
         <h2 class="info-section__title">Оставьте свой отзыв</h2>
 
-        <p class="info-section__text  info-section__text--low">Помогите нашим отелям стать лучше!
-          оставьте отзыв о них, а также о
-          посещенных вами достопримечательностях
+        <p class="info-section__text info-section__text--low">Помогите нашим отелям стать лучше!
+          оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </section>
     </article>
 
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="feedback-form__contact-info">
-        <legend class="feedback-form__title">Представьтесь:</legend>
+      <fieldset class="feedback-form__contact-info feedback-form__contact-info--full-name">
+        <legend class="feedback-form__title feedback-form__title--full-name">Представьтесь:</legend>
         <label class="feedback-form__field-label">Имя*:
           <input class="feedback-form__field-input feedback-form__field-input--first-name-longer" type="text" name="first-name" value="Петр" required>
         </label>
@@ -61,8 +60,8 @@
         </label>
       </fieldset>
 
-      <fieldset class="feedback-form__contact-info">
-        <legend class="feedback-form__title">Контактная информация:</legend>
+      <fieldset class="feedback-form__contact-info feedback-form__contact-info--contacts">
+        <legend class="feedback-form__title feedback-form__title--contacts">Контактная информация:</legend>
         <label class="feedback-form__field-label feedback-form__field-label--padding" for="telephone">Контактный телефон*:</label>
           <div class="feedback-form__field-container">
             <input class="feedback-form__field-input feedback-form__field-input--contact-info" type="tel" id="telephone" name="telephone" placeholder="Введите телефон" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
@@ -77,49 +76,63 @@
           </div>
       </fieldset>
 
-      <fieldset class="feedback-form__contact-info">
-        <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+      <fieldset class="feedback-form__contact-info feedback-form__contact-info--impression">
+        <legend class="feedback-form__title feedback-form__title--impression">Ваше общее впечатление:</legend>
         <label class="feedback-form__field-label feedback-form__field-label--radio">
-          <input class="feedback-form__selector" type="radio" name="radio" value="positive" checked>
-          Скорее положительное
+          <input class="feedback-form__selector feedback-form__selector--radio" type="radio" name="radio" value="positive" checked>
+          <span class="feedback-form__radio-custom"></span>
+          <span class="feedback-form__label-text">Скорее положительное</span>
         </label>
         <label class="feedback-form__field-label feedback-form__field-label--radio">
-          <input class="feedback-form__selector" type="radio" name="radio" value="negative">
-          Скорее отрицательное
+          <input class="feedback-form__selector feedback-form__selector--radio" type="radio" name="radio" value="negative">
+          <span class="feedback-form__radio-custom"></span>
+          <span class="feedback-form__label-text">Скорее отрицательное</span>
         </label>
         <label class="feedback-form__field-label feedback-form__field-label--radio">
-          <input class="feedback-form__selector" type="radio" name="radio" value="neutral">
-          Затрудняюсь ответить
-        </label>
-      </fieldset>
-
-      <fieldset class="feedback-form__contact-info">
-        <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
-        <label class="feedback-form__field-label feedback-form__field-label--radio">
-          <input class="feedback-form__selector" type="checkbox" name="checkbox" value="devils-bridge" checked>
-          Мост Дьявола
-        </label>
-        <label class="feedback-form__field-label feedback-form__field-label--radio">
-          <input class="feedback-form__selector" type="checkbox" name="checkbox" value="slide-park" checked>
-          Слайд-парк
-        </label>
-        <label class="feedback-form__field-label feedback-form__field-label--radio">
-          <input class="feedback-form__selector" type="checkbox" name="checkbox" value="mount-bell">
-          Гора-Колокол
-        </label>
-        <label class="feedback-form__field-label feedback-form__field-label--radio">
-          <input class="feedback-form__selector" type="checkbox" name="checkbox" value="red-rocks" checked>
-          Красные скалы
+          <input class="feedback-form__selector feedback-form__selector--radio" type="radio" name="radio" value="neutral">
+          <span class="feedback-form__radio-custom"></span>
+          <span class="feedback-form__label-text">Затрудняюсь ответить</span>
         </label>
       </fieldset>
 
-      <fieldset class="feedback-form__contact-info">
-        <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+      <fieldset class="feedback-form__contact-info feedback-form__contact-info--sight">
+        <legend class="feedback-form__title feedback-form__title--sight">Посещенные достопримечательности:</legend>
+        <div class="feedback-form__column feedback-form__column--left">
+          <label class="feedback-form__field-label feedback-form__field-label--radio">
+            <input class="feedback-form__selector feedback-form__selector--checkbox" type="checkbox" name="checkbox" value="devils-bridge" checked>
+            <span class="feedback-form__checkbox-custom"></span>
+            <span class="feedback-form__label-text">Мост Дьявола</span>
+          </label>
+          <label class="feedback-form__field-label feedback-form__field-label--radio">
+            <input class="feedback-form__selector feedback-form__selector--checkbox" type="checkbox" name="checkbox" value="slide-park" checked>
+            <span class="feedback-form__checkbox-custom"></span>
+            <span class="feedback-form__label-text">Слайд-парк</span>
+          </label>
+        </div>
+
+        <div class="feedback-form__column feedback-form__column--right">
+          <label class="feedback-form__field-label feedback-form__field-label--radio">
+            <input class="feedback-form__selector feedback-form__selector--checkbox" type="checkbox" name="checkbox" value="mount-bell">
+            <span class="feedback-form__checkbox-custom"></span>
+            <span class="feedback-form__label-text">Гора-Колокол</span>
+          </label>
+          <label class="feedback-form__field-label feedback-form__field-label--radio">
+            <input class="feedback-form__selector feedback-form__selector--checkbox" type="checkbox" name="checkbox" value="red-rocks" checked>
+            <span class="feedback-form__checkbox-custom"></span>
+            <span class="feedback-form__label-text">Красные скалы</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="feedback-form__contact-info feedback-form__contact-info--review">
+        <legend class="feedback-form__title feedback-form__title--review">Опишите свои эмоции:</legend>
         <textarea class="feedback-form__field-input feedback-form__field-input--textarea">Опишите подробно все свои восторги
         </textarea>
       </fieldset>
 
       <button class="feedback-form__button" type="submit">Отправить отзыв</button>
+
+      <p class="feedback-form__notice">* — обязательные поля</p>
     </form>
   </main>
   <footer class="main-footer">
@@ -136,7 +149,7 @@
     </p>
   </footer>
 
-  <article class="popup js-popup-failure">
+  <article class="popup popup--failure js-popup-failure">
     <section class="popup__section popup__section--failure">
       <h2 class="popup__title">Что-то пошло не так!</h2>
 
@@ -149,7 +162,7 @@
     <button class="popup__button">Ok</button>
   </article>
 
-  <article class="popup js-popup-success">
+  <article class="popup popup--success js-popup-success">
     <section class="popup__section popup__section--success">
       <h2 class="popup__title">Ваш отзыв отправлен!</h2>
 
@@ -160,8 +173,9 @@
       </p>
     </section>
 
+    <div class="popup__button-container">
       <button class="popup__button popup__button--success">Закрыть окно</button>
-
+    </div>
   </article>
 </body>
 </html>

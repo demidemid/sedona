@@ -8,6 +8,7 @@
 .feedback-form__contact-info {
   position: relative;
   border: 0;
+  padding-top: 0;
   padding-bottom: 25px;
   margin: 0;
 
@@ -36,10 +37,12 @@
 }
 
 .feedback-form__field-label {
-  display: block;
+  display: flex;
+  height: 58px;
   font-size: 14px;
   font-weight: 400;
   color: #000000;
+  align-items: center;
   text-transform: uppercase;
   margin-top: 13px;
 
@@ -56,6 +59,67 @@
   }
 }
 
+.feedback-form__selector {
+  display: none;
+}
+
+.feedback-form__radio-custom {
+  display: inline-block;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  background-color: $form-input-bg-color;
+  border: 1px solid $form-input-bg-color;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.feedback-form__selector--radio:checked +
+.feedback-form__radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.feedback-form__checkbox-custom {
+  display: inline-block;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-color: $form-input-bg-color;
+  border: 1px solid $form-input-bg-color;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.feedback-form__selector--checkbox:checked +
+.feedback-form__checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  top: 20px;
+  left: 16px;
+
+  width: 24px;
+  height: 16px;
+  background: url("../img/icon-tick.svg") no-repeat;
+}
+
+.feedback-form__label-text {
+  margin-left: 22px;
+}
+
 .feedback-form__field-input {
   min-height: 58px;
   width: 182px;
@@ -65,6 +129,7 @@
   box-sizing: border-box;
   margin-left: 15px;
   padding-left: 22px;
+  box-sizing: padding-box;
 
   font-size: 18px;
   font-weight: 700;
@@ -85,6 +150,24 @@
     min-height: 160px;
     margin-left: 0;
     margin-top: 17px;
+  }
+
+  /* Кроссбраузерные стили для placeholder */
+
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #000000;
+  }
+
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #000000;
+  }
+
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #000000;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    color: #000000;
   }
 }
 
@@ -138,6 +221,213 @@
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+}
+
+.feedback-form__notice {
+  display: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+@media #{$tablet-widths} {
+  .feedback-form {
+    display: flex;
+    width: 648px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .feedback-form__contact-info {
+    width: 648px;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 75px;
+
+    &::before {
+      background-color: transparent;
+    }
+
+    &--full-name {
+      width: 324px;
+      padding-left: 49px;
+      order: 2;
+
+      &::before {
+        content: "";
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        transform: rotate(90deg);
+        transform-origin: left;
+
+        width: 292px;
+        height: 1px;
+        background-color: #e5e5e5;
+      }
+    }
+
+    &--contacts {
+      order: 3;
+      padding-bottom: 58px;
+    }
+
+    &--impression {
+      width: 324px;
+      order: 1;
+    }
+
+    &--sight {
+      display: inline-block;
+      order: 4;
+      padding-bottom: 70px;
+    }
+
+    &--review {
+      order: 5;
+      padding-bottom: 58px;
+    }
+
+    &--half-size-form {
+      width: 324px;
+    }
+  }
+
+  .feedback-form__field-input {
+    width: 182px;
+
+    &--first-name-longer {
+      width: 218px;
+    }
+
+    &--contact-info {
+      width: 590px;
+    }
+
+    &--textarea {
+      width: 648px;
+      padding-top: 15px;
+    }
+  }
+
+  .feedback-form__title {
+    padding: 0;
+    margin-bottom: 26px;
+    text-align: left;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      top: 13px;
+      left: 0;
+
+      width: 125px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: 13px;
+      right: 0;
+
+      width: 125px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &--full-name {
+
+      &::before {
+        background-color: transparent;
+      }
+
+      &::after {
+        background-color: transparent;
+      }
+    }
+
+    &--impression {
+
+      &::before {
+        background-color: transparent;
+      }
+
+      &::after {
+        background-color: transparent;
+      }
+    }
+
+    &--contacts {
+      text-align: center;
+      margin-bottom: 12px;
+    }
 
 
+    &--sight {
+      text-align: center;
+      width: 290px;
+
+      &::before {
+        top: 26px;
+      }
+
+      &::after {
+        top: 26px;
+      }
+    }
+
+    &--review {
+      text-align: center;
+    }
+  }
+
+  .feedback-form__field-label {
+
+    &--padding {
+      margin-bottom: 0;
+    }
+  }
+
+  .feedback-form__error-message {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+
+  .feedback-form__button {
+    order: 6;
+    width: 324px;
+    margin-left: 0;
+  }
+
+  .feedback-form__column {
+    margin: 0;
+    display: inline-block;
+    width: 320px;
+    box-sizing: border-box;
+
+    &--left {
+      padding-left: 95px;
+    }
+
+    &--right {
+      padding-left: 30px;
+    }
+
+  }
+
+  .feedback-form__notice {
+    display: block;
+    order: 7;
+    margin-top: 25px;
+  }
 }
