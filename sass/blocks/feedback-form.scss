@@ -51,7 +51,7 @@
     padding-bottom: 7px;
   }
 
-  &--radio {
+  &--selector {
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -409,17 +409,24 @@
     margin-left: 0;
   }
 
+  // таблетка
   .feedback-form__column {
     margin: 0;
-    display: inline-block;
-    width: 320px;
+    width: 648px;
     box-sizing: border-box;
 
+    &--sight {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+
     &--left {
+      width: 320px;
       padding-left: 95px;
     }
 
     &--right {
+      width: 320px;
       padding-left: 30px;
     }
 
@@ -453,6 +460,10 @@
       width: 960px;
       font-size: 0px;
     }
+
+    &--sight {
+      padding-bottom: 55px;
+    }
   }
 
   .feedback-form__title {
@@ -480,12 +491,28 @@
     &--first-name-longer {
       width: 350px;
     }
+
+    &--textarea {
+      width: 960px;
+      margin-top: 30px;
+    }
   }
 
 
   .feedback-form__column {
     display: inline-block;
     width: 480px;
+    font-size: 0;
+
+    &--left {
+      width: 477px;
+      padding-left: 0;
+    }
+
+    &--right {
+      width: 477px;
+      padding-left: 0;
+    }
   }
 
   .feedback-form__field-label {
@@ -495,6 +522,14 @@
       margin-top: 0;
       padding-left: 0;
       padding-right: 16px;
+    }
+
+    &--selector {
+      display: inline-flex;
+
+      &:first-child {
+        margin-right: 58px;
+      }
     }
   }
 
@@ -512,5 +547,9 @@
     left: 105px;
     font-size: 14px;
     padding-left: 0;
+  }
+
+  .feedback-form__button {
+    width: 480px;
   }
 }
