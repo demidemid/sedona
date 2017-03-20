@@ -181,7 +181,7 @@
   border: 0;
 
   height: 58px;
-  width: 58px;
+  min-width: 58px;
   padding: 0;
   margin: 0;
   background-color: #e6e6e6;
@@ -468,6 +468,10 @@
     &--impression {
       padding-left: 80px;
     }
+
+    &--contacts {
+      margin-bottom: 75px;
+    }
   }
 
   .feedback-form__field-input {
@@ -484,10 +488,29 @@
     width: 480px;
   }
 
+  .feedback-form__field-label {
+
+    &--padding {
+      display: inline-flex;
+      margin-top: 0;
+      padding-left: 0;
+      padding-right: 16px;
+    }
+  }
+
+  .feedback-form__field-container {
+    display: inline-flex;
+    width: 315px;
+  }
+
+  .feedback-form__disable {
+    display: none;
+  }
+
   .feedback-form__error-message {
-    position: absolute;
-    top: 50px;
-    right: 0;
+    top: 60px;
+    left: 105px;
     font-size: 14px;
+    padding-left: 0;
   }
 }
