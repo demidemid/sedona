@@ -10,10 +10,20 @@
   font-size: 21px;
   font-weight: 700;
   margin-top: 40px;
+  margin-bottom: 42px;
+}
+
+.main-footer__social {
+  display: flex;
+  height: 48px;
+  width: 151px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .main-footer__social-button {
-  display: inline-block;
+  display: block;
   width: 46px;
   height: 48px;
   background-color: $main-bg-color;
@@ -54,4 +64,41 @@
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media #{$tablet-widths} {
+  .main-footer {
+    display: flex;
+    position: relative;
+    min-height: 120px;
+    width: 768px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 0 60px;
+  }
+
+  .main-footer__title {
+    margin: 0;
+  }
+
+  .main-footer__copyright {
+    margin: 0;
+  }
+
+  .main-footer__social {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-footer {
+    width: 1200px;
+
+    padding-left: 132px;
+    padding-right: 120px;
+  }
 }

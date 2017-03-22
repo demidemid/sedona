@@ -1,6 +1,14 @@
 .body {
   font-family: $basic-font-family;
-  max-width: $body-width;
+  width: $body-width;
   margin: 0 auto;
   text-align: center;
+
+  @media #{$tablet-widths} {
+    width: 768px
+  }
+
+  @media #{$desktop-widths} {
+    width: 1200px
+  }
 }

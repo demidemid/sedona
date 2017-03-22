@@ -1,21 +1,40 @@
 .main-header {
   display: flex;
   position: relative;
-  justify-content: flex-end;
-  height: 56px;
-  width: 320px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    height: 56px;
+  }
 }
 
 .main-header__logo {
   position: absolute;
 
-  top: 0;
-  right: calc(100% / 2);
-  transform: translateX(50%);
+  top: 164px;
+  left: 110px;
+
+  order: 2;
   z-index: 10;
+
+  @media #{$tablet-widths} {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .main-header__menu-button {
-  margin: auto 0;
+  display: inline-block;
+  position: relative;
+  margin-top: 17px;
+  margin-bottom: 18px;
+  margin-left: auto;
   margin-right: 20px;
+  order: 3;
+}
+
+.main-header__menu {
+  order: 1;
 }

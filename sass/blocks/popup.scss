@@ -2,11 +2,12 @@
   display: block;
   text-transform: uppercase;
   border: 1px solid $main-bg-color;
-
-  @include container;
 }
 
 .popup__section {
+
+  @include container;
+
   &--failure {
     margin-top: 46px;
   }
@@ -54,6 +55,58 @@
 
   &--success {
     width: 280px;
-    margin-bottom: 20px;
+    margin: 20px;
+  }
+}
+
+.popup__button-container {
+  height: 98px;
+  background-color: $form-input-bg-color;
+}
+
+@media #{$tablet-widths} {
+  .popup {
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &--success {
+      width: 640px;
+      padding: 0;
+    }
+
+    &--failure {
+      width: 400px;
+    }
+  }
+
+  .popup__section {
+    margin-top: 65px;
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__button {
+
+    &--success {
+      margin: 44px 91px;
+    }
+  }
+
+  .popup__text {
+
+    &--success {
+      width: 415px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 39px;
+      box-sizing: border-box;
+    }
+  }
+
+  .popup__button-container {
+    height: 146px;
   }
 }

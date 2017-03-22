@@ -7,8 +7,10 @@
 .info-section__image {
   width: 320px;
   height: 389px;
+  margin: 0 auto;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #e4f1f9;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -19,15 +21,16 @@
 
 .info-section__facts {
   @include container;
+  padding-top: 46px;
 }
 
 .info-section__promo {
   @include container;
+  margin-top: 45px;
 }
 
 .info-section__title {
-  margin: 0;
-  margin-top: 46px;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
@@ -42,7 +45,7 @@
   margin-bottom: 22px;
 
   &--low {
-    text-transform: none;
+    // text-transform: none;
     margin-bottom: 33px;
   }
 }
@@ -54,4 +57,61 @@
   margin: 0;
   margin-top: 40px;
   margin-bottom: 32px;
+}
+
+@media #{$tablet-widths} {
+  .info-section__facts {
+    padding-top: 50px;
+  }
+
+  .info-section__promo {
+    padding: 0;
+    margin-top: 75px;
+  }
+
+  .info-section__title {
+    width: 510px;
+    font-size: 21px;
+
+    &--promo {
+      font-size: 30px;
+    }
+  }
+
+  .info-section__text {
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--low {
+      width: 445px;
+      margin-bottom: 75px;
+    }
+  }
+  .info-section__image {
+    width: 768px;
+
+    &--shorter {
+      height: 290px;
+    }
+  }
+
+  .info-section__reasons {
+    margin-top: 40px;
+    margin-bottom: 55px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .info-section__image {
+    width: 1200px;
+  }
+
+  .info-section__reasons {
+    margin-top: 50px;
+  }
+
+  .info-section__promo {
+    margin-top: 114px;
+  }
 }
