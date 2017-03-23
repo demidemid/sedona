@@ -20,8 +20,7 @@
 }
 
 .info-section__facts {
-  @include container;
-  padding-top: 46px;
+  padding-top: 40px;
 }
 
 .info-section__promo {
@@ -55,8 +54,9 @@
   color: #333333;
   font-weight: 400;
   margin: 0;
-  margin-top: 40px;
-  margin-bottom: 32px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  @include container;
 }
 
 @media #{$tablet-widths} {

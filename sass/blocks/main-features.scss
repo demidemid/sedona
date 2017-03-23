@@ -4,9 +4,9 @@
 
   @include container;
 
-  padding-top: 41px;
+  padding-top: 35px;
   padding-left: 0;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 }
 
 .main-features__advice {
@@ -21,7 +21,7 @@
   line-height: 26px;
   color: #000000;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 
   &::before {
     content: "";
@@ -29,8 +29,8 @@
     width: 39px;
     height: 37px;
 
-    top: -8px;
-    left: -50px;
+    top: -10px;
+    left: -48px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -46,6 +46,8 @@
   }
 
   &--food::before {
+    top: -5px;
+    left: -50px;
     background-image: url("../img/icon-burger.svg");
   }
 }
@@ -56,7 +58,7 @@
   font-weight: 400;
   color: #333333;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 @media #{$tablet-widths} {

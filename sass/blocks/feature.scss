@@ -22,42 +22,49 @@
   text-align: center;
   background-color: $main-bg-color;
   text-transform: uppercase;
-  padding-bottom: 46px;
+  padding-bottom: 40px;
   box-sizing: border-box;
 
   &--theme-grey {
     background-color: #eeeeee;
     color: #000000;
+    padding-bottom: 26px;
   }
 
   @include container;
 }
 
 .feature__title {
-  padding-top: 46px;
-  font-size: 21px;
+  padding-top: 40px;
+  line-height: 26px;
+  font-size: 18px;
   margin: 0;
+
+  &--theme-grey {
+    padding-top: 30px;
+  }
 }
 
 .feature__text {
   font-size: 14px;
   margin: 0;
-  margin-top: 18px;
+  margin-top: 11px;
 
   &--theme-grey {
     color: #333333;
+    margin-top: 12px;
   }
 }
 
 .feature__image {
   display: block;
   margin: 0 auto;
-  height: 256px;
+  height: 260px;
   width: 320px;
 }
 
 .feature__picture {
-  height: 256px;
+  height: 260px;
   width: 320px;
 }
 
