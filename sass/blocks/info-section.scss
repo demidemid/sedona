@@ -6,7 +6,7 @@
 
 .info-section__image {
   width: 320px;
-  height: 389px;
+  height: 158px;
   margin: 0 auto;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -25,7 +25,7 @@
 
 .info-section__promo {
   @include container;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 .info-section__title {
@@ -41,11 +41,12 @@
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  margin-top: 24px;
   margin-bottom: 22px;
 
   &--low {
     // text-transform: none;
-    margin-bottom: 33px;
+    margin-bottom: 26px;
   }
 }
 

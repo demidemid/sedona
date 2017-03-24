@@ -21,25 +21,28 @@
 }
 
 .picture__image {
+  height: 280px;
   padding: 22px 0;
+  padding-bottom: 15px;
 }
 
 .picture__title {
-  margin-top: 0;
-  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .picture__text {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   font-weight: 400;
   color: #333333;
 }
 
 .picture__likes-counter {
-  padding-bottom: 21px;
+  padding-bottom: 17px;
 }
 
 .picture__like-button {
