@@ -73,7 +73,7 @@
     text-align: center;
     width: 256px;
     padding: 0 45px;
-    padding-top: 164px;
+    padding-top: 160px;
     box-sizing: border-box;
 
     &--house {
@@ -91,22 +91,27 @@
 
   .main-features__title {
     font-size: 21px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     &::before {
       width: 75px;
       height: 72px;
 
-      top: -120px;
+      top: -100px;
       left: 0;
       right: 0;
       margin-left: auto;
       margin-right: auto;
     }
+
+    &--souvenir::before {
+      top: -103px;
+      left: -3px;
+    }
   }
 
   .main-features__text {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 }
 
