@@ -71,6 +71,10 @@
 }
 
 @media #{$desktop-widths} {
+  .video-content {
+    padding-bottom: 85px;
+  }
+
   .video-content__video-clip {
     width: 800px;
   }

@@ -137,6 +137,14 @@
 @media #{$desktop-widths} {
   .feature__fact {
     width: 400px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .feature__title {
+    width: 160px;
+    padding-top: 50px;
+    align-self: center;
   }
 
   .feature__image {

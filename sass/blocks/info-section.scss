@@ -109,23 +109,9 @@
 }
 
 @media #{$desktop-widths} {
-  .feature__fact {
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-
-  .feature__title {
-    width: 160px;
-    padding-top: 50px;
-    align-self: center;
-  }
-
-  .info-section__text {
-
-  }
-
   .info-section__image {
     width: 1200px;
+    height: 301px;
   }
 
   .info-section__reasons {
