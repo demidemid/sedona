@@ -84,13 +84,14 @@
   }
 
   .info-section__text {
-    margin-top: 35px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 
     &--low {
+      //фото и видео margin
       width: 445px;
-      margin-bottom: 75px;
+      margin-bottom: 70px;
     }
   }
   .info-section__image {
@@ -111,7 +112,6 @@
   .feature__fact {
     padding-left: 55px;
     padding-right: 55px;
-
   }
 
   .feature__title {
@@ -120,6 +120,9 @@
     align-self: center;
   }
 
+  .info-section__text {
+
+  }
 
   .info-section__image {
     width: 1200px;

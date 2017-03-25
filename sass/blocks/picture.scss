@@ -50,7 +50,7 @@
   background: transparent;
 
   width: 23px;
-  height: 22px;
+  height: 20px;
 
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
@@ -75,9 +75,11 @@
   .picture {
     padding: 0;
     width: 324px;
+    height: 347px;
 
     &:first-child {
       width: 648px;
+      height: 480px;
     }
 
     &::before {
@@ -90,12 +92,13 @@
 
     &--main {
       width: 648px;
+      height: 400px;
     }
   }
 
   .picture__image {
     padding: 0;
-    height: 280px;
+    height: 347px;
 
     &--main {
       width: 648px;
@@ -114,22 +117,32 @@
   }
 
   .picture__likes-counter {
+    min-width: 85px;
     padding: 0;
     margin: auto;
-    margin-right: 20px;
+    margin-right: 0;
   }
 
   .picture__footer {
     display: flex;
+    position: relative;
     min-height: 80px;
     box-sizing: border-box;
     background-color: #f2f2f2;
+    z-index: 10;
+    transform: translateY(-100%);
   }
 
   .pictute__sign-block {
     padding-left: 20px;
     margin: auto 0;
   }
+
+  .picture__count {
+    margin-left: 5px;
+    line-height: 24px;
+  }
+
 }
 
 @media #{$desktop-widths} {
