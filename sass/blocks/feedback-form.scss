@@ -393,9 +393,34 @@
       margin-bottom: 0;
     }
 
-    &--selector {
-      display: inline;
+    &--checkbox {
+      width: 229px;
     }
+
+    &--devils-bridge {
+      order: 1;
+      margin-left: 95px;
+    }
+
+    &--slide-park {
+      order: 3;
+      margin-left: 95px;
+    }
+
+    &--mount-bell {
+      order: 2;
+      margin-left: 30px;
+    }
+
+    &--red-rocks {
+      order: 4;
+      margin-left: 30px;
+    }
+  }
+
+  .feedback-form__sight-container {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .feedback-form__error-message {
