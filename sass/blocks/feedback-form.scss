@@ -440,23 +440,6 @@
     margin: 0;
     width: 648px;
     box-sizing: border-box;
-    // background-color: yellow;
-
-    // &--sight {
-    //   display: inline-flex;
-    //   flex-wrap: wrap;
-    // }
-    //
-    // &--left {
-    //   width: 320px;
-    //   padding-left: 95px;
-    // }
-    //
-    // &--right {
-    //   width: 320px;
-    //   padding-left: 30px;
-    // }
-
   }
 
   .feedback-form__notice {
@@ -526,7 +509,6 @@
     }
   }
 
-
   .feedback-form__column {
     display: inline-block;
     width: 480px;
@@ -558,6 +540,30 @@
       &:first-child {
         margin-right: 58px;
       }
+    }
+
+    &--checkbox {
+      width: 205px;
+    }
+
+    &--devils-bridge {
+      order: 1;
+      margin-left: 0;
+    }
+
+    &--slide-park {
+      order: 3;
+      margin-left: 43px ;
+    }
+
+    &--mount-bell {
+      order: 2;
+      margin-left: 45px;
+    }
+
+    &--red-rocks {
+      order: 4;
+      margin-left: 33px;
     }
   }
 
