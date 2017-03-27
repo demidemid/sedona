@@ -285,6 +285,7 @@
     width: 648px;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-bottom: 60px;
   }
 
   .feedback-form__contact-info {
@@ -333,12 +334,12 @@
       display: flex;
       width: 648px;
       order: 4;
-      padding-bottom: 70px;
+      padding-bottom: 53px;
     }
 
     &--review {
       order: 5;
-      padding-bottom: 58px;
+      padding-bottom: 52px;
     }
 
     &--half-size-form {
@@ -374,6 +375,8 @@
     &--textarea {
       width: 648px;
       padding-top: 15px;
+      margin-top: 30px;
+      margin-left: 0;
     }
   }
 
@@ -461,6 +464,7 @@
 
     &--checkbox {
       width: 229px;
+      margin-bottom: 15px;
     }
 
     &--radio {
@@ -525,7 +529,7 @@
   .feedback-form__notice {
     display: block;
     order: 7;
-    margin-top: 25px;
+    margin: auto 0;
   }
 }
 
