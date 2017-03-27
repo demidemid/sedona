@@ -84,13 +84,14 @@
   }
 
   .info-section__text {
+    width: 445px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 73px;
 
-    &--low {
+    &--photo-low {
       //фото и видео margin
-      width: 445px;
       margin-bottom: 70px;
     }
   }
