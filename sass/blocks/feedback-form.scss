@@ -1,6 +1,6 @@
 .feedback-form {
   line-height: 26px;
-  padding-bottom: 47px;
+  padding-bottom: 38px;
   text-align: left;
 
 }
@@ -25,6 +25,22 @@
     height: 1px;
     background-color: #e5e5e5;
   }
+
+  &--contacts {
+    padding-bottom: 9px;
+  }
+
+  &--impression {
+    padding-bottom: 19px;
+  }
+
+  &--sight {
+    padding-bottom: 19px;
+  }
+
+  &--review {
+    padding-bottom: 45px;
+  }
 }
 
 .feedback-form__title {
@@ -32,25 +48,29 @@
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  padding-top: 24px;
+  padding-top: 20px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  &--impression {
+    padding-bottom: 20px;
+  }
 }
 
 .feedback-form__field-label {
   display: inline-flex;
-  height: 58px;
   font-size: 14px;
   font-weight: 400;
   color: #000000;
   align-items: center;
   text-transform: uppercase;
-  margin-top: 13px;
+  margin-top: 20px;
 
   &--padding {
-    padding-left: 27px;
-    padding-bottom: 7px;
+    padding-left: 22px;
+    margin-top: 20px;
+    margin-bottom: 7px;
   }
 
   &--radio,
@@ -59,6 +79,15 @@
     font-weight: 700;
     line-height: 26px;
     text-transform: none;
+  }
+
+  &--radio {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &--checkbox {
+    margin-top: 17px;
   }
 }
 
@@ -125,13 +154,13 @@
 
 .feedback-form__field-input {
   min-height: 58px;
-  width: 182px;
+  width: 190px;
 
   border: 0;
   background-color: $form-input-bg-color;
   box-sizing: border-box;
   margin-left: 15px;
-  padding-left: 22px;
+  padding-left: 20px;
   box-sizing: padding-box;
 
   font-size: 18px;
@@ -140,7 +169,7 @@
   color: #000000;
 
   &--first-name-longer {
-    width: 220px;
+    width: 229px;
   }
 
   &--contact-info {
@@ -153,6 +182,7 @@
     min-height: 160px;
     margin-left: 0;
     margin-top: 17px;
+    padding-top: 15px;
   }
 
   /* Кроссбраузерные стили для placeholder */
@@ -176,6 +206,7 @@
 
 .feedback-form__field-container {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .feedback-form__field-icon {
@@ -201,14 +232,19 @@
 }
 
 .feedback-form__error-message {
+  position: absolute;
+  display: block;
   color: #ff5c5c;
   text-transform: none;
-  padding-left: 27px;
+  margin-top: -20px;
+  padding-top: 5px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .feedback-form__button {
   display: block;
-  min-height: 58px;
+  height: 58px;
   width: 280px;
   border: 0;
   background-color: $main-bg-color;
@@ -216,9 +252,9 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-transform: uppercase;
 
-  padding-top: 21px;
-  padding-bottom: 21px;
+
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -424,7 +460,6 @@
   }
 
   .feedback-form__error-message {
-    position: absolute;
     top: 65px;
     right: 0;
   }
@@ -547,22 +582,18 @@
     }
 
     &--devils-bridge {
-      order: 1;
       margin-left: 0;
     }
 
     &--slide-park {
-      order: 3;
       margin-left: 43px ;
     }
 
     &--mount-bell {
-      order: 2;
       margin-left: 45px;
     }
 
     &--red-rocks {
-      order: 4;
       margin-left: 33px;
     }
   }
