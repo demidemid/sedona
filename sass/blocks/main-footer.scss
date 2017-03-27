@@ -99,6 +99,13 @@
     width: 1200px;
 
     padding-left: 132px;
-    padding-right: 120px;
+    padding-right: 44px;
+  }
+
+  .main-footer__copyright {
+
+    &--form-margin {
+      margin-right: 76px;
+    }
   }
 }
