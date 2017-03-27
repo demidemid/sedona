@@ -350,7 +350,7 @@
   .feedback-form__label-text {
 
     &--checkbox {
-      margin-left: 22px;
+      margin-left: 24px;
     }
 
     &--radio {
@@ -468,6 +468,7 @@
     }
 
     &--radio {
+      margin-left: 5px;
       margin-bottom: 20px;
     }
 
@@ -536,27 +537,33 @@
 @media #{$desktop-widths} {
   .feedback-form {
     width: 960px;
+    padding-top: 0px;
+    padding-bottom: 67px;
   }
 
   .feedback-form__contact-info {
     width: 960px;
 
+
     &--impression {
       width: 480px;
+      padding-bottom: 45px;
     }
 
     &--full-name {
       width: 480px;
       padding-left: 78px;
+      padding-bottom: 48px;
     }
 
     &--contacts {
       width: 960px;
       font-size: 0px;
+      padding-bottom: 27px;
     }
 
     &--sight {
-      padding-bottom: 55px;
+      padding-bottom: 50px;
     }
   }
 
@@ -570,13 +577,17 @@
       width: 280px;
     }
 
+    &--full-name {
+      margin-left: 0;
+    }
+
     &--impression {
       width: 400px;
-      padding-left: 80px;
+      padding-left: 39px;
     }
 
     &--contacts {
-      margin-bottom: 75px;
+      margin-bottom: 44px;
     }
   }
 
@@ -590,23 +601,19 @@
     &--textarea {
       width: 960px;
       margin-top: 30px;
+      padding-top: 17px;
     }
   }
 
+  .feedback-form__container {
+    display: flex;
+    align-items: flex-end;
+  }
+
   .feedback-form__column {
-    display: inline-block;
+    display: flex;
     width: 480px;
     font-size: 0;
-
-    &--left {
-      width: 477px;
-      padding-left: 0;
-    }
-
-    &--right {
-      width: 477px;
-      padding-left: 0;
-    }
   }
 
   .feedback-form__field-label {
@@ -616,6 +623,8 @@
       margin-top: 0;
       padding-left: 0;
       padding-right: 16px;
+      padding-bottom: 15px;
+      order: 2;
     }
 
     &--selector {
@@ -635,22 +644,22 @@
     }
 
     &--slide-park {
-      margin-left: 43px ;
+      margin-left: 55px;
     }
 
     &--mount-bell {
-      margin-left: 45px;
+      margin-left: 53px;
     }
 
     &--red-rocks {
-      margin-left: 33px;
+      margin-left: 30px;
     }
   }
 
   .feedback-form__field-container {
     display: inline-flex;
     width: 315px;
-    // order: 3;
+    order: 3;
   }
 
   .feedback-form__disable {
@@ -658,10 +667,11 @@
   }
 
   .feedback-form__error-message {
-    // top: 60px;
-    // left: 105px;
+    min-width: 470px;
+    margin-left: 0;
     font-size: 14px;
-    padding-left: 0;
+    padding-left: 106px;
+    order: 1;
   }
 
   .feedback-form__button {

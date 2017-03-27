@@ -6,7 +6,7 @@
 
 .info-section__image {
   width: 320px;
-  height: 158px;
+  height: 389px;
   margin: 0 auto;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -44,9 +44,9 @@
   margin-top: 24px;
   margin-bottom: 16px;
 
-  &--low {
+  &--photo-low {
     // text-transform: none;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
 }
 
@@ -62,7 +62,12 @@
 
 @media #{$tablet-widths} {
   .info-section__image {
+    width: 768px;
     height: 518px;
+
+    &--shorter {
+      height: 290px;
+    }
   }
 
   .info-section__facts {
@@ -95,13 +100,6 @@
       margin-bottom: 70px;
     }
   }
-  .info-section__image {
-    width: 768px;
-
-    &--shorter {
-      height: 290px;
-    }
-  }
 
   .info-section__reasons {
     margin-top: 30px;
@@ -112,7 +110,11 @@
 @media #{$desktop-widths} {
   .info-section__image {
     width: 1200px;
-    height: 301px;
+    height: 518px;
+
+    &--shorter {
+      height: 301px;
+    }
   }
 
   .info-section__reasons {
@@ -120,6 +122,15 @@
   }
 
   .info-section__promo {
-    margin-top: 114px;
+    margin-top: 111px;
+  }
+
+  .info-section__text {
+    margin-bottom: 60px;
+
+    &--photo-low {
+      //фото и видео margin
+      margin-bottom: 70px;
+    }
   }
 }
