@@ -20,13 +20,12 @@
 }
 
 .info-section__facts {
-  @include container;
-  padding-top: 46px;
+  padding-top: 40px;
 }
 
 .info-section__promo {
   @include container;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 .info-section__title {
@@ -42,11 +41,12 @@
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-  margin-bottom: 22px;
+  margin-top: 24px;
+  margin-bottom: 16px;
 
-  &--low {
+  &--photo-low {
     // text-transform: none;
-    margin-bottom: 33px;
+    margin-bottom: 27px;
   }
 }
 
@@ -55,11 +55,21 @@
   color: #333333;
   font-weight: 400;
   margin: 0;
-  margin-top: 40px;
-  margin-bottom: 32px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  @include container;
 }
 
 @media #{$tablet-widths} {
+  .info-section__image {
+    width: 768px;
+    height: 518px;
+
+    &--shorter {
+      height: 290px;
+    }
+  }
+
   .info-section__facts {
     padding-top: 50px;
   }
@@ -79,39 +89,48 @@
   }
 
   .info-section__text {
-    margin-top: 35px;
+    width: 445px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 73px;
 
-    &--low {
-      width: 445px;
-      margin-bottom: 75px;
-    }
-  }
-  .info-section__image {
-    width: 768px;
-
-    &--shorter {
-      height: 290px;
+    &--photo-low {
+      //фото и видео margin
+      margin-bottom: 70px;
     }
   }
 
   .info-section__reasons {
-    margin-top: 40px;
-    margin-bottom: 55px;
+    margin-top: 30px;
+    margin-bottom: 49px;
   }
 }
 
 @media #{$desktop-widths} {
   .info-section__image {
     width: 1200px;
+    height: 518px;
+
+    &--shorter {
+      height: 301px;
+    }
   }
 
   .info-section__reasons {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .info-section__promo {
-    margin-top: 114px;
+    margin-top: 111px;
+  }
+
+  .info-section__text {
+    margin-bottom: 60px;
+
+    &--photo-low {
+      //фото и видео margin
+      margin-bottom: 70px;
+    }
   }
 }

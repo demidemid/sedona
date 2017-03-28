@@ -38,9 +38,9 @@
       <div class="info-section__image info-section__image--shorter"></div>
 
       <section class="info-section__promo">
-        <h2 class="info-section__title">Оставьте свой отзыв</h2>
+        <h2 class="info-section__title info-section__title--promo">Оставьте свой отзыв</h2>
 
-        <p class="info-section__text info-section__text--low">Помогите нашим отелям стать лучше!
+        <p class="info-section__text">Помогите нашим отелям стать лучше!
           оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </section>
@@ -63,23 +63,24 @@
       <fieldset class="feedback-form__contact-info feedback-form__contact-info--contacts">
         <legend class="feedback-form__title feedback-form__title--contacts">Контактная информация:</legend>
 
-        <div class="feedback-form__column">
-        <label class="feedback-form__field-label feedback-form__field-label--padding" for="telephone"><span class="feedback-form__disable">Контактный </span>телефон*:</label>
-        <div class="feedback-form__field-container">
-          <input class="feedback-form__field-input feedback-form__field-input--contact-info" type="tel" id="telephone" name="telephone" placeholder="Введите телефон" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-          <span class="feedback-form__field-icon feedback-form__field-icon--telephone"></span>
-        </div>
-        <span class="feedback-form__error-message">Ошибка, перепроверьте номер</span>
-        </div>
+        <div class="feedback-form__container">
+          <div class="feedback-form__column">
+            <label class="feedback-form__field-label feedback-form__field-label--padding" for="telephone"><span class="feedback-form__disable">Контактный&nbsp;</span>телефон*:</label>
+            <div class="feedback-form__field-container">
+              <input class="feedback-form__field-input feedback-form__field-input--contact-info" type="tel" id="telephone" name="telephone" placeholder="Введите телефон" pattern="+[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+              <span class="feedback-form__field-icon feedback-form__field-icon--telephone"></span>
+            </div>
+            <span class="feedback-form__error-message">Ошибка, перепроверьте номер</span>
+          </div>
 
-        <div class="feedback-form__column">
-        <label class="feedback-form__field-label feedback-form__field-label--padding" for="email">Электронная почта*:</label>
-        <div class="feedback-form__field-container">
-          <input class="feedback-form__field-input feedback-form__field-input--contact-info" id="email" type="email" name="email" placeholder="Введите e-mail" required>
-          <span class="feedback-form__field-icon feedback-form__field-icon--email"></span>
+          <div class="feedback-form__column">
+            <label class="feedback-form__field-label feedback-form__field-label--padding" for="email">Электронная почта*:</label>
+            <div class="feedback-form__field-container">
+              <input class="feedback-form__field-input feedback-form__field-input--contact-info" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+              <span class="feedback-form__field-icon feedback-form__field-icon--email"></span>
+            </div>
+          </div>
         </div>
-        </div>
-
       </fieldset>
 
       <fieldset class="feedback-form__contact-info feedback-form__contact-info--impression">
@@ -87,49 +88,47 @@
         <label class="feedback-form__field-label feedback-form__field-label--radio">
           <input class="feedback-form__selector feedback-form__selector--radio" type="radio" name="radio" value="positive" checked>
           <span class="feedback-form__radio-custom"></span>
-          <span class="feedback-form__label-text">Скорее положительное</span>
+          <span class="feedback-form__label-text feedback-form__label-text--radio">Скорее положительное</span>
         </label>
         <label class="feedback-form__field-label feedback-form__field-label--radio">
           <input class="feedback-form__selector feedback-form__selector--radio" type="radio" name="radio" value="negative">
           <span class="feedback-form__radio-custom"></span>
-          <span class="feedback-form__label-text">Скорее отрицательное</span>
+          <span class="feedback-form__label-text feedback-form__label-text--radio">Скорее отрицательное</span>
         </label>
         <label class="feedback-form__field-label feedback-form__field-label--radio">
           <input class="feedback-form__selector feedback-form__selector--radio" type="radio" name="radio" value="neutral">
           <span class="feedback-form__radio-custom"></span>
-          <span class="feedback-form__label-text">Затрудняюсь ответить</span>
+          <span class="feedback-form__label-text feedback-form__label-text--radio">Затрудняюсь ответить</span>
         </label>
       </fieldset>
 
       <fieldset class="feedback-form__contact-info feedback-form__contact-info--sight">
         <legend class="feedback-form__title feedback-form__title--sight">Посещенные достопримечательности:</legend>
-
-
-          <label class="feedback-form__field-label feedback-form__field-label--checkbox">
+        <div class="feedback-form__sight-container">
+          <label class="feedback-form__field-label feedback-form__field-label--checkbox feedback-form__field-label--devils-bridge">
             <input class="feedback-form__selector feedback-form__selector--checkbox" type="checkbox" name="checkbox" value="devils-bridge" checked>
             <span class="feedback-form__checkbox-custom"></span>
-            <span class="feedback-form__label-text">Мост Дьявола</span>
+            <span class="feedback-form__label-text  feedback-form__label-text--checkbox">Мост Дьявола</span>
           </label>
 
-          <label class="feedback-form__field-label feedback-form__field-label--checkbox">
+          <label class="feedback-form__field-label feedback-form__field-label--checkbox feedback-form__field-label--slide-park">
             <input class="feedback-form__selector feedback-form__selector--checkbox" type="checkbox" name="checkbox" value="slide-park" checked>
             <span class="feedback-form__checkbox-custom"></span>
-            <span class="feedback-form__label-text">Слайд-парк</span>
+            <span class="feedback-form__label-text  feedback-form__label-text--checkbox">Слайд-парк</span>
           </label>
 
-          <label class="feedback-form__field-label feedback-form__field-label--checkbox">
+          <label class="feedback-form__field-label feedback-form__field-label--checkbox feedback-form__field-label--mount-bell">
             <input class="feedback-form__selector feedback-form__selector--checkbox" type="checkbox" name="checkbox" value="mount-bell">
             <span class="feedback-form__checkbox-custom"></span>
-            <span class="feedback-form__label-text">Гора-Колокол</span>
+            <span class="feedback-form__label-text  feedback-form__label-text--checkbox">Гора-Колокол</span>
           </label>
 
-          <label class="feedback-form__field-label feedback-form__field-label--checkbox">
+          <label class="feedback-form__field-label feedback-form__field-label--checkbox feedback-form__field-label--red-rocks">
             <input class="feedback-form__selector feedback-form__selector--checkbox" type="checkbox" name="checkbox" value="red-rocks" checked>
             <span class="feedback-form__checkbox-custom"></span>
-            <span class="feedback-form__label-text">Красные скалы</span>
+            <span class="feedback-form__label-text  feedback-form__label-text--checkbox">Красные скалы</span>
           </label>
-
-
+        </div>
       </fieldset>
 
       <fieldset class="feedback-form__contact-info feedback-form__contact-info--review">
@@ -152,7 +151,7 @@
       <a class="main-footer__social-button main-footer__social-button--youtube" href="#">YouTube</a>
     </div>
 
-    <p class="main-footer__copyright">
+    <p class="main-footer__copyright main-footer__copyright--form-margin">
       Разработано<a class="main-footer__copyright-icon" href="#">в HTML Academy</a>
     </p>
   </footer>

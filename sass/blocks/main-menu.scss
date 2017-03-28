@@ -9,22 +9,27 @@
 }
 
 .main-menu__item {
-  display: block;
+  display: flex;
+  height: 56px;
   position: relative;
   background-color: $main-bg-color;
+  border-top: 1px solid #9ac2db;
   border-bottom: 1px solid $menu-bottom-border-color;
+
   font-family: $basic-font-family;
-  font-weight: 700;
-  text-transform: uppercase;
   font-size: 18px;
   line-height: 40px;
-  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 
   &--after-cross-button::after {
     content: "";
     position: absolute;
 
-    top: 10px;
+    top: 16px;
     right: 20px;
 
     width: 22px;
