@@ -61,12 +61,16 @@
 
 .feature__image {
   display: block;
+  position: relative;
   margin: 0 auto;
   height: 260px;
   width: 320px;
 }
 
 .feature__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 260px;
   width: 320px;
 }
