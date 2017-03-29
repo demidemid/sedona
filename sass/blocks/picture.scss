@@ -89,10 +89,11 @@
 
   .picture__source {
     width: 324px;
+    height: auto;
 
     &--main {
       width: 648px;
-      height: 400px;
+      // height: 400px;
     }
   }
 
@@ -170,11 +171,11 @@
 
   .picture__source {
     width: 400px;
-    height: 267px;
+    height: auto;
 
     &--main {
       width: 1200px;
-      height: 400px;
+      // height: 400px;
     }
   }
 

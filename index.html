@@ -10,7 +10,12 @@
 
   <header class="main-header">
     <div class="main-header__logo">
-      <img width="102" height="83" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+        <source media="(min-width:320px)" srcset="img/logo-sedona-mobile.svg">
+        <img class="main-header__logo-picture" width="102" height="83" src="img/logo-sedona-desktop.svg" alt="City of Sedona">
+      </picture>
     </div>
     <div class="main-header__menu-button">
       <button class="burger-button"></button>
@@ -59,19 +64,10 @@
 
         <div class="feature__image">
           <picture>
-          <source
-            media="(min-width:1200px)"
-            srcset="img/photo-city@2x.jpg 2x,
-                    img/photo-city@1x.jpg 1x">
-          <source
-            media="(min-width:768px)"
-            srcset="img/photo-city-tablet@2x.jpg 2x,
-                    img/photo-city-tablet@1x.jpg 1x">
-          <source
-            media="(min-width:320px)"
-            srcset="img/photo-city-mobile@2x.jpg 2x,
-                    img/photo-city-mobile@1x.jpg 1x">
-          <img class="feature__picture" width="320px" height="260" src="img/photo-city@1x.jpg" alt="Picture 0f Sedona">
+            <source media="(min-width:1200px)" srcset="img/photo-city@2x.jpg 2x, img/photo-city@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/photo-city-tablet@2x.jpg 2x, img/photo-city-tablet@1x.jpg 1x">
+            <source media="(min-width:320px)" srcset="img/photo-city-mobile@2x.jpg 2x, img/photo-city-mobile@1x.jpg 1x">
+            <img class="feature__picture" width="320px" height="260" src="img/photo-city@1x.jpg" alt="Picture 0f Sedona">
           </picture>
         </div>
       </article>
@@ -105,7 +101,12 @@
         </section>
 
         <div class="feature__image feature__image--devil-bridge">
-          <img class="feature__picture" width="320" height="260" src="img/photo-4-mobile@1x.jpg" alt="Picture 0f Sedona">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/photo-4-desktop@2x.jpg 2x, img/photo-4-desktop@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/photo-4-tablet@2x.jpg 2x, img/photo-4-tablet@1x.jpg 1x">
+            <source media="(min-width:320px)" srcset="img/photo-4-mobile@2x.jpg 2x, img/photo-4-mobile@1x.jpg 1x">
+            <img class="feature__picture" width="320" height="260" src="img/photo-4-desktop@1x.jpg" alt="Picture 0f Sedona">
+          </picture>
         </div>
       </article>
 
@@ -148,7 +149,12 @@
       </section>
 
       <article class="map">
-        <img width="320" height="350" src="img/bg-map-mobile@1x.jpg" alt="Map 0f Sedona">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/bg-map-desktop@2x.jpg 2x, img/bg-map-desktop@1x.jpg 1x">
+          <source media="(min-width:768px)" srcset="img/bg-map-tablet@2x.jpg 2x, img/bg-map-tablet@1x.jpg 1x">
+          <source media="(min-width:320px)" srcset="img/bg-map-mobile@2x.jpg 2x, img/bg-map-mobile@1x.jpg 1x">
+          <img class="map__picture" width="320" height="350" src="img/bg-map-desktop@1x.jpg" alt="Map 0f Sedona">
+        </picture>
       </article>
     </div>
   </main>
