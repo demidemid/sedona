@@ -162,7 +162,14 @@
           подорожали в очередной раз!</p>
       </section>
 
-      <video class="video-content__video-clip" preload="metadata" width="320" height="201" poster="img/video-mobile@1x.jpg"></video>
+      <div class="video-content__video-clip">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/video-desktop@2x.jpg 2x, img/video-desktop@1x.jpg 1x">
+          <source media="(min-width:768px)" srcset="img/video-tablet@2x.jpg 2x, img/video-tablet@1x.jpg 1x">
+          <source media="(min-width:320px)" srcset="img/video-mobile@2x.jpg 2x, img/video-mobile@1x.jpg 1x">
+          <img class="video-content__picture-source" width="320" height="201" src="img/video-desktop@1x.jpg" alt="Video Sample">
+        </picture>
+      </div>
       <div class="video-content__controls">
         <div class="video-content__scroll-bar">
         </div>
