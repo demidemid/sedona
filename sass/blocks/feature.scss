@@ -25,6 +25,24 @@
   padding-bottom: 40px;
   box-sizing: border-box;
 
+  &--feature__fact--real-town {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 30px;
+      width: 320px;
+
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
   @include container;
 
   &--theme-grey {
