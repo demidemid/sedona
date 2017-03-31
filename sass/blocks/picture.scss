@@ -52,11 +52,12 @@
   width: 23px;
   height: 20px;
 
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.picture__like-color {
+  fill: rgba(0, 0, 0, .3);
 }
 
 .picture__count {
@@ -189,5 +190,9 @@
 
   .picture__text {
     color: #ffffff;
+  }
+
+  .picture__like-color {
+    fill: #ffffff;
   }
 }
