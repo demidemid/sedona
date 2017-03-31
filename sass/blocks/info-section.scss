@@ -49,6 +49,7 @@
 
   &--shorter {
     height: 158px;
+    background-position: bottom;
   }
 }
 
@@ -99,8 +100,8 @@
   color: #333333;
   font-weight: 400;
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 26px;
+  margin-bottom: 5px;
   @include container;
 }
 
@@ -130,8 +131,8 @@
     margin-top: 77px;
 
     &--shorter {
-      height: 75px;
-      width: 457px;
+      height: 80px;
+      width: 500px;
       margin-top: 96px;
     }
   }

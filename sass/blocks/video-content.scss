@@ -97,25 +97,27 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+  color: #5c6870;
 
   &--repeat {
     min-width: 16px;
     margin-left: 25px;
-    // background-image: url("../img/icon-video-replay.svg");
   }
 
   &--subtitle {
     min-width: 32px;
     margin-left: auto;
     margin-right: 31px;
-    // background-image: url("../img/icon-video-subtitles.svg");
   }
 
   &--full-screen {
     min-width: 20px;
     margin-right: 23px;
-    // background-image: url("../img/icon-video-fullscreen.svg");
   }
+}
+
+.video-content__button-color {
+  fill: currentColor;
 }
 
 .video-content__footer {
@@ -195,6 +197,7 @@
   }
 
   .video-content__button {
+    color: #ffffff;
 
     &--repeat {
       margin-left: 35px;
@@ -214,10 +217,6 @@
     height: 93px;
     transform: translateY(-100%);
     background-color: transparent;
-  }
-
-  .video-content__button-color {
-    fill: #ffffff;
   }
 }
 
