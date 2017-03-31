@@ -25,6 +25,10 @@
   justify-content: center;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
   &--after-cross-button::after {
     content: "";
     position: absolute;
@@ -42,6 +46,10 @@
 .main-menu__link {
   text-decoration: none;
   color: $menu-font-color;
+
+  &:active {
+    color: rgba(255, 255, 255, .3);
+  }
 }
 
 @media #{$tablet-widths} {
@@ -60,6 +68,10 @@
     font-size: 14px;
     line-height: 26px;
 
+    &:hover {
+      background-color: transparent;
+    }
+
     &--third {
       margin-left: auto;
     }
@@ -73,6 +85,26 @@
     display: block;
     padding: 15px 0;
     color: #000000;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, .3);
+    }
+
+    &--active {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:active {
+        color: #766357;
+      }
+    }
   }
 
   .main-header__menu-button {

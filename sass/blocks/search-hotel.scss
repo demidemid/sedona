@@ -38,6 +38,19 @@
   align-items: center;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, .3);
+  }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
 }
 
 @media #{$tablet-widths} {
