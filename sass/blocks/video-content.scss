@@ -101,20 +101,20 @@
   &--repeat {
     min-width: 16px;
     margin-left: 25px;
-    background-image: url("../img/icon-video-replay.svg");
+    // background-image: url("../img/icon-video-replay.svg");
   }
 
   &--subtitle {
     min-width: 32px;
     margin-left: auto;
     margin-right: 31px;
-    background-image: url("../img/icon-video-subtitles.svg");
+    // background-image: url("../img/icon-video-subtitles.svg");
   }
 
   &--full-screen {
     min-width: 20px;
     margin-right: 23px;
-    background-image: url("../img/icon-video-fullscreen.svg");
+    // background-image: url("../img/icon-video-fullscreen.svg");
   }
 }
 
@@ -214,6 +214,10 @@
     height: 93px;
     transform: translateY(-100%);
     background-color: transparent;
+  }
+
+  .video-content__button-color {
+    fill: #ffffff;
   }
 }
 
