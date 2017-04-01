@@ -26,31 +26,10 @@
 }
 
 .search-hotel__button {
-  display: flex;
-  border: 0;
-  background-color: $main-bg-color;
-  color: #ffffff;
   height: 58px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, .3);
-  }
-
-  &:disabled {
-    color: #ffffff;
-    background-color: #e5e5e5;
-  }
 }
 
 @media #{$tablet-widths} {

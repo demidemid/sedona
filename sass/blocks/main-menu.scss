@@ -50,6 +50,13 @@
   &:active {
     color: rgba(255, 255, 255, .3);
   }
+
+  &--disabled {
+
+    :disabled {
+      color: #e5e5e5;
+    }
+  }
 }
 
 @media #{$tablet-widths} {
