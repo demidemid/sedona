@@ -18,21 +18,8 @@
 
   @media #{$retina} {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   height: 213px;
-  //   width: 200px;
-  //
-  //   top: 0;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //
-  //   background-image: url("../img/text-sedona-index.svg");
-  //   background-repeat: no-repeat;
-  // }
 
   &::after {
     content: "";

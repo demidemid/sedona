@@ -1,17 +1,25 @@
 .popup {
   display: block;
-  // position: fixed;
+  position: fixed;
   width: 320px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   text-transform: uppercase;
-  border: 1px solid transparent;
+  border: 0;
   background-color: #ffffff;
+  z-index: 10;
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
 
   &--success {
+    display: none;
     min-height: 323px;
   }
 
   &--failure {
+    display: none;
     min-height: 280px;
   }
 }
@@ -21,33 +29,38 @@
   @include container;
 
   &--failure {
-    margin-top: 46px;
+    margin-top: 0;
+    padding-top: 42px;
   }
 
   &--success {
-    margin-top: 49px;
+    margin-top: 0;
+    padding-top: 45px;
   }
 }
 
 .popup__title {
   font-size: 18px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
 
 .popup__text {
+  width: 220px;
   font-size: 14px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
   line-height: 24px;
   font-weight: 400;
   color: #333333;
 
   &--success {
-    margin-bottom: 60px;
+    margin-bottom: 36px;
   }
 }
 
