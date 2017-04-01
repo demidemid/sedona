@@ -89,7 +89,6 @@
 
 .feature__image {
   display: block;
-  position: relative;
   margin: 0 auto;
   height: 260px;
   width: 320px;
@@ -97,12 +96,8 @@
 }
 
 .feature__picture {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   height: auto;
   width: 320px;
-  transform: translate(-50%,-50%);
 }
 
 @media #{$tablet-widths} {
@@ -118,7 +113,7 @@
     display: flex;
     flex-direction: column;
     width: 256px;
-    height: 256px;
+    min-height: 256px;
 
     padding-left: 40px;
     padding-right: 40px;
@@ -162,7 +157,8 @@
 
   .feature__image {
     width: 512px;
-    height: 256px;
+    position: relative;
+    height: auto;
     margin: 0;
 
     &--devil-bridge {
@@ -172,7 +168,7 @@
 
   .feature__picture {
     width: 512px;
-    // height: 256px;
+    height: 100%;
   }
 }
 
@@ -191,11 +187,17 @@
 
   .feature__image {
     width: 800px;
+    position: relative;
     overflow: hidden;
   }
 
   .feature__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 800px;
-    // height: auto;
+    height: auto;
+    transform: translate(-50%,-50%);
+
   }
 }
