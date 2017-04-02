@@ -2,20 +2,53 @@
   font-family: $basic-font-family;
   text-transform: uppercase;
   line-height: 26px;
+  background-color: #ffffff;
 }
 
 .info-section__image {
+  position: relative;
   width: 320px;
   height: 389px;
   margin: 0 auto;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #e4f1f9;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
+
+  @media #{$retina} {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 100%;
+
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+  }
 
   &--shorter {
     height: 158px;
+    background-position: bottom;
+  }
+}
+
+.info-section__index-text {
+  width: 281px;
+  margin-top: 90px;
+
+  &--shorter {
+    height: 38px;
+    width: 229px;
+    margin-top: 52px;
   }
 }
 
@@ -55,8 +88,8 @@
   color: #333333;
   font-weight: 400;
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 26px;
+  margin-bottom: 5px;
   @include container;
 }
 
@@ -64,9 +97,31 @@
   .info-section__image {
     width: 768px;
     height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media #{$retina} {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
+    &::after {
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
 
     &--shorter {
       height: 290px;
+    }
+  }
+
+  .info-section__index-text {
+    width: 460px;
+    height: 350px;
+    margin-top: 77px;
+
+    &--shorter {
+      height: 80px;
+      width: 500px;
+      margin-top: 96px;
     }
   }
 
@@ -111,9 +166,27 @@
   .info-section__image {
     width: 1200px;
     height: 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media #{$retina} {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
+    &::after {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
 
     &--shorter {
       height: 301px;
+    }
+  }
+
+  .info-section__index-text {
+    margin-top: 78px;
+
+    &--shorter {
+      width: 461px;
+      margin-top: 104px;
     }
   }
 

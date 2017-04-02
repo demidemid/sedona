@@ -10,7 +10,12 @@
 
   <header class="main-header">
     <div class="main-header__logo">
-      <img width="102" height="83" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+        <source media="(min-width:320px)" srcset="img/logo-sedona-mobile.svg">
+        <img class="main-header__logo-picture" width="102" height="83" src="img/logo-sedona-desktop.svg" alt="City of Sedona">
+      </picture>
     </div>
     <div class="main-header__menu-button">
       <button class="burger-button"></button>
@@ -19,7 +24,7 @@
     <nav class="main-menu main-header--menu">
       <ul class="main-menu__list">
         <li class="main-menu__item main-menu__item--after-cross-button">
-          <a class="main-menu__link">Главная</a>
+          <a class="main-menu__link main-menu__link--active">Главная</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="./photo.html">Фото и видео</a>
@@ -33,9 +38,11 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main">
     <article class="info-section">
-      <div class="info-section__image"></div>
+      <div class="info-section__image">
+        <img class="info-section__index-text" src="img/text-sedona-index.svg" alt="Sedona slogan">
+      </div>
       <section class="info-section__facts">
         <h2 class="info-section__title">
           Седона — небольшой
@@ -50,7 +57,7 @@
 
     <div class="main-container">
       <article class="feature">
-        <section class="feature__fact">
+        <section class="feature__fact feature__fact--real-town">
           <h2 class="feature__title">Настоящий городок</h2>
           <p class="feature__text">— №1 —</p>
           <p class="feature__text feature__text--info">Седона не аттракцион для туристов,
@@ -58,7 +65,12 @@
         </section>
 
         <div class="feature__image">
-          <img class="feature__picture" width="320px" height="260" src="img/photo-city@1x.jpg" alt="Picture 0f Sedona">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/photo-city@2x.jpg 2x, img/photo-city@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/photo-city-tablet@2x.jpg 2x, img/photo-city-tablet@1x.jpg 1x">
+            <source media="(min-width:320px)" srcset="img/photo-city-mobile@2x.jpg 2x, img/photo-city-mobile@1x.jpg 1x">
+            <img class="feature__picture" width="320" height="260" src="img/photo-city@1x.jpg" alt="Picture 0f Sedona">
+          </picture>
         </div>
       </article>
 
@@ -91,7 +103,12 @@
         </section>
 
         <div class="feature__image feature__image--devil-bridge">
-          <img class="feature__picture" width="320" height="260" src="img/photo-4-mobile@1x.jpg" alt="Picture 0f Sedona">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/photo-bridge@2x.jpg 2x, img/photo-bridge@1x.jpg 1x">
+            <source media="(min-width:768px)" srcset="img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.jpg 1x">
+            <source media="(min-width:320px)" srcset="img/photo-bridge-mobile@2x.jpg 2x, img/photo-bridge-mobile@1x.jpg 1x">
+            <img class="feature__picture" width="320" height="260" src="img/photo-bridge@1x.jpg" alt="Picture 0f Sedona">
+          </picture>
         </div>
       </article>
 
@@ -99,7 +116,7 @@
         <section class="feature__fact feature__fact--theme-grey">
           <h2 class="feature__title feature__title--theme-grey">Небольшая площадь</h2>
           <p class="feature__text feature__text--theme-grey">— №3 —</p>
-          <p class="feature__text feature__text--theme-grey">Все достопримеча- тельности
+          <p class="feature__text feature__text--theme-grey-info">Все достопримеча- тельности
             находятся очень близко</p>
         </section>
       </article>
@@ -109,7 +126,7 @@
 
           <h2 class="feature__title feature__title--theme-grey">Красивая дорога</h2>
           <p class="feature__text feature__text--theme-grey">— №4 —</p>
-          <p class="feature__text feature__text--theme-grey">Ехать в Седону из Лас-Вегаса
+          <p class="feature__text feature__text--theme-grey-info">Ехать в Седону из Лас-Вегаса
             совсем не&nbsp;скучно!</p>
         </section>
       </article>
@@ -119,7 +136,7 @@
 
           <h2 class="feature__title feature__title--theme-grey">Мало туристов</h2>
           <p class="feature__text feature__text--theme-grey">— №5 —</p>
-          <p class="feature__text feature__text--theme-grey">Большинство едет в Гранд Каньон
+          <p class="feature__text feature__text--theme-grey-info">Большинство едет в Гранд Каньон
             и толпится там</p>
         </section>
       </article>
@@ -130,11 +147,17 @@
           поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
         предложения гостиниц в Седоне</p>
 
-        <a class="search-hotel__button">Найти гостиницу</a>
+        <a class="button search-hotel__button">Найти гостиницу</a>
       </section>
 
       <article class="map">
-        <img width="320" height="350" src="img/bg-map-mobile@1x.jpg" alt="Map 0f Sedona">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9d6a85f289544fbe86246130d1490f5326427fcd87cbcaa9b20556d505df7dc6&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false&amp;centering:true"></script>
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/bg-map-desktop@2x.jpg 2x, img/bg-map-desktop@1x.jpg 1x">
+          <source media="(min-width:768px)" srcset="img/bg-map-tablet@2x.jpg 2x, img/bg-map-tablet@1x.jpg 1x">
+          <source media="(min-width:320px)" srcset="img/bg-map-mobile@2x.jpg 2x, img/bg-map-mobile@1x.jpg 1x">
+          <img class="map__picture" width="320" height="350" src="img/bg-map-desktop@1x.jpg" alt="Map 0f Sedona">
+        </picture>
       </article>
     </div>
   </main>
@@ -142,14 +165,36 @@
     <h2 class="main-footer__title">#visitsedona</h2>
 
     <div class="main-footer__social">
-      <a class="main-footer__social-button main-footer__social-button--twitter" href="#">Twitter</a>
-      <a class="main-footer__social-button main-footer__social-button--facebook" href="#">Facebook</a>
-      <a class="main-footer__social-button main-footer__social-button--youtube" href="#">YouTube</a>
+      <a class="main-footer__social-button" href="#">
+        <svg class="main-footer__social-button-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="15" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+          <g>
+            <g>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+            </g>
+          </g>
+        </svg>
+        Twitter</a>
+      <a class="main-footer__social-button" href="#">
+        <svg class="main-footer__social-button-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="19" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+          <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+        </svg>
+        Facebook
+      </a>
+      <a class="main-footer__social-button" href="#">
+        <svg class="main-footer__social-button-icon" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="14" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+          <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+        </svg>
+        YouTube</a>
     </div>
 
     <p class="main-footer__copyright">
-      Разработано<a class="main-footer__copyright-icon" href="#">в HTML Academy</a>
+      Разработано<a class="main-footer__copyright-icon" href="#">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path class="main-footer__copyright-image" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+        </svg>
+        в HTML Academy</a>
     </p>
   </footer>
+  <script src="js/app.js" async></script>
 </body>
 </html>

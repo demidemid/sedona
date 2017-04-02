@@ -108,6 +108,16 @@
   border: 1px solid $form-input-bg-color;
   border-radius: 50%;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+    border: 1px solid #d5d5d5;
+  }
 }
 
 .feedback-form__selector--radio:checked +
@@ -127,6 +137,12 @@
   box-sizing: border-box;
 }
 
+.feedback-form__selector--radio:checked +
+.feedback-form__radio-custom:active::before {
+  background-color: rgba(51, 51, 51, .3);
+  border: 0px solid rgba(51, 51, 51, .3);
+}
+
 .feedback-form__checkbox-custom {
   display: inline-block;
   position: relative;
@@ -136,6 +152,16 @@
   border: 1px solid $form-input-bg-color;
   border-radius: 5px;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+    border: 1px solid #d5d5d5;
+  }
 }
 
 .feedback-form__selector--checkbox:checked +
@@ -150,6 +176,11 @@
   width: 24px;
   height: 16px;
   background: url("../img/icon-tick.svg") no-repeat;
+}
+
+.feedback-form__selector--checkbox:checked +
+.feedback-form__checkbox-custom:active::before {
+  opacity: 0.3;
 }
 
 .feedback-form__label-text {
@@ -191,6 +222,20 @@
     margin-left: 0;
     margin-top: 17px;
     padding-top: 15px;
+
+    &:focus {
+      padding-top: 11px;
+    }
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+    padding-left: 16px;
   }
 
   /* Кроссбраузерные стили для placeholder */
@@ -252,22 +297,13 @@
 }
 
 .feedback-form__button {
-  display: block;
   height: 58px;
   width: 280px;
-  border: 0;
-  background-color: $main-bg-color;
-  color: #ffffff;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  text-transform: uppercase;
-
-
-  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
 }
 
 .feedback-form__notice {
@@ -383,7 +419,7 @@
   .feedback-form__title {
     position: relative;
     width: 400px;
-    padding: 0 60px;
+    padding: 0 55px;
     margin-bottom: 26px;
     font-size: 21px;
     line-height: 26px;
@@ -442,6 +478,8 @@
 
     &--contacts {
       text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
       margin-bottom: 25px;
     }
 

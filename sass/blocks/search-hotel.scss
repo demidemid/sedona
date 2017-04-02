@@ -1,5 +1,5 @@
 .search-hotel {
-  padding-top: 25px;
+  padding-top: 30px;
   padding-bottom: 49px;
   text-transform: uppercase;
   margin: 0 auto;
@@ -26,18 +26,10 @@
 }
 
 .search-hotel__button {
-  display: flex;
-  border: 0;
-  background-color: $main-bg-color;
-  color: #ffffff;
   height: 58px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  cursor: pointer;
 }
 
 @media #{$tablet-widths} {

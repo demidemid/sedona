@@ -47,16 +47,19 @@
 
 .picture__like-button {
   border: 0;
+  padding-left: 0;
+  padding-right: 0;
   background: transparent;
 
   width: 23px;
   height: 20px;
 
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+.picture__like-color {
+  fill: rgba(0, 0, 0, .3);
 }
 
 .picture__count {
@@ -89,10 +92,11 @@
 
   .picture__source {
     width: 324px;
+    height: auto;
 
     &--main {
       width: 648px;
-      height: 400px;
+      // height: 400px;
     }
   }
 
@@ -170,11 +174,11 @@
 
   .picture__source {
     width: 400px;
-    height: 267px;
+    height: auto;
 
     &--main {
       width: 1200px;
-      height: 400px;
+      // height: 400px;
     }
   }
 
@@ -188,5 +192,9 @@
 
   .picture__text {
     color: #ffffff;
+  }
+
+  .picture__like-color {
+    fill: #ffffff;
   }
 }

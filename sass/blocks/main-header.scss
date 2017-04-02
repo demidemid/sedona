@@ -3,6 +3,7 @@
   position: relative;
   flex-wrap: wrap;
   margin: 0 auto;
+  background-color: #ffffff;
 
   @media #{$tablet-widths} {
     height: 56px;
@@ -10,15 +11,17 @@
 }
 
 .main-header__logo {
-  position: absolute;
-
-  top: 224px;
+  position: relative;
+  margin-bottom: -30px;
+  // top: 224px;
   left: 110px;
 
   order: 2;
   z-index: 10;
 
   @media #{$tablet-widths} {
+    position: absolute;
+    margin-bottom: 0;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -37,4 +40,15 @@
 
 .main-header__menu {
   order: 1;
+}
+
+@media #{$desktop-widths} {
+  .main-header__logo {
+    width: 188px;
+    height: 96px;
+  }
+  .main-header__logo-picture {
+    width: auto;
+    height: auto;
+  }
 }

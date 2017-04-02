@@ -2,14 +2,19 @@
   text-transform: uppercase;
   line-height: 26px;
   color: #000000;
+  background-color: #ffffff;
 
   @include container;
+
+  padding-top: 36px;
+  padding-bottom: 23px;
 }
 
 .main-footer__title {
   font-size: 21px;
   font-weight: 700;
-  margin-top: 36px;
+  // margin-top: 36px;
+  margin-top: 0;
   margin-bottom: 35px;
 }
 
@@ -23,35 +28,38 @@
 }
 
 .main-footer__social-button {
-  display: block;
+  display: flex;
   width: 46px;
   height: 48px;
   background-color: $main-bg-color;
   font-size: 0;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-
+  &:hover {
+    background-color: #669ec0;
   }
 
-  &--facebook {
-    background-image: url("../img/icon-facebook.svg");
-
-  }
-
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
+  &:active {
+    color: rgba(255, 255, 255, .3);
   }
 }
 
+.main-footer__social-button-icon {
+  fill: currentColor;
+}
+
 .main-footer__copyright {
+  display: flex;
   font-size: 14px;
   font-weight: 400;
   line-height: 40px;
   margin-top: 37px;
-  margin-bottom: 23px;
+  // margin-bottom: 23px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-footer__copyright-icon {
@@ -60,10 +68,19 @@
   height: 34px;
   font-size: 0;
   margin-left: 11px;
+  color: #000000;
 
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, .3);
+  }
+}
+
+.main-footer__copyright-image {
+  fill: currentColor;
 }
 
 @media #{$tablet-widths} {

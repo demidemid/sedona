@@ -1,7 +1,27 @@
 .popup {
   display: block;
+  position: fixed;
+  width: 320px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   text-transform: uppercase;
-  border: 1px solid $main-bg-color;
+  border: 0;
+  background-color: #ffffff;
+  z-index: 10;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+
+  &--success {
+    display: none;
+    min-height: 323px;
+  }
+
+  &--failure {
+    display: none;
+    min-height: 280px;
+  }
 }
 
 .popup__section {
@@ -9,49 +29,51 @@
   @include container;
 
   &--failure {
-    margin-top: 46px;
+    margin-top: 0;
+    padding-top: 42px;
   }
 
   &--success {
-    margin-top: 49px;
+    margin-top: 0;
+    padding-top: 45px;
   }
 }
 
 .popup__title {
   font-size: 18px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
 
 .popup__text {
+  width: 220px;
   font-size: 14px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
   line-height: 24px;
   font-weight: 400;
   color: #333333;
 
   &--success {
-    margin-bottom: 60px;
+    margin-bottom: 36px;
   }
 }
 
 .popup__button {
   width: 180px;
   min-height: 58px;
-  border: 0;
-  background-color: $main-bg-color;
-
-  color: #ffffff;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 35px;
-  text-transform: uppercase;
-  cursor: pointer;
 
   &--success {
     width: 280px;
@@ -60,6 +82,8 @@
 }
 
 .popup__button-container {
+  display: flex;
+  justify-content: center;
   height: 98px;
   background-color: $form-input-bg-color;
 }
@@ -71,21 +95,30 @@
 
     &--success {
       width: 640px;
+      min-height: 347px;
       padding: 0;
     }
 
     &--failure {
       width: 400px;
+      min-height: 346px;
     }
   }
 
   .popup__section {
-    margin-top: 65px;
+    padding-top: 65px;
   }
 
   .popup__title {
     font-size: 30px;
     line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--failure {
+      width: 220px;
+      margin-bottom: 31px;
+    }
   }
 
   .popup__button {
@@ -96,6 +129,11 @@
   }
 
   .popup__text {
+
+    &--failure {
+      width: 290px;
+      margin-bottom: 31px;
+    }
 
     &--success {
       width: 415px;
