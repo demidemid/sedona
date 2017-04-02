@@ -11,15 +11,17 @@
 }
 
 .main-header__logo {
-  position: absolute;
-
-  top: 224px;
+  position: relative;
+  margin-bottom: -30px;
+  // top: 224px;
   left: 110px;
 
   order: 2;
   z-index: 10;
 
   @media #{$tablet-widths} {
+    position: absolute;
+    margin-bottom: 0;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
