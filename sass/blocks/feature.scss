@@ -203,7 +203,9 @@
   .feature__title {
     width: 160px;
     padding-top: 50px;
-    align-self: center;
+    // align-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .feature__image {
@@ -219,6 +221,13 @@
     width: 800px;
     height: auto;
     transform: translate(-50%,-50%);
+  }
 
+  // перенос текста с дефисом :sick:
+  .feature__all-sight {
+
+    &::after {
+      right: 72px;
+    }
   }
 }
