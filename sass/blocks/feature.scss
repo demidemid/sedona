@@ -162,6 +162,20 @@
     }
   }
 
+  // перенос текста с дефисом :sick:
+  .feature__all-sight {
+    display: block;
+    position: relative;
+
+    &::after {
+      content: "-";
+      position: absolute;
+
+      top: -1px;
+      right: 5px;
+    }
+  }
+
   .feature__image {
     width: 512px;
     position: relative;
