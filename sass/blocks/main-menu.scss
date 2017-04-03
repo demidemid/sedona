@@ -1,6 +1,10 @@
 .main-menu {
-  display: none;
+  display: block;
   min-width: 320px;
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .main-menu__list {
