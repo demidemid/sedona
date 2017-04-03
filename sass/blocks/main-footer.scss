@@ -86,7 +86,7 @@
   .main-footer {
     display: flex;
     position: relative;
-    min-height: 120px;
+    height: 120px;
     width: 768px;
     justify-content: space-between;
     align-items: center;
@@ -105,8 +105,9 @@
 
   .main-footer__social {
     position: absolute;
-    transform: translateX(-50%);
     left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
