@@ -59,6 +59,12 @@
 .info-section__promo {
   @include container;
   margin-top: 40px;
+
+  &--photo {
+    margin-top: 37px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .info-section__title {
@@ -78,7 +84,7 @@
   margin-bottom: 16px;
 
   &--photo-low {
-    // text-transform: none;
+    margin-top: 26px;
     margin-bottom: 27px;
   }
 }
