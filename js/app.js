@@ -1,7 +1,7 @@
 (function() {
   var menuOpen = document.querySelector(".burger-button");
   var menuMobile = document.querySelector(".main-menu");
-  var menuClose = menuMobile.querySelector(".main-menu__item--after-cross-button");
+  var menuClose = menuMobile.querySelector(".main-menu__cross-button");
 
   menuOpen.addEventListener("click", function(event) {
     event.preventDefault();
