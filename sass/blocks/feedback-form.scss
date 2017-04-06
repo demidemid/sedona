@@ -673,22 +673,22 @@
 
     &--checkbox {
       width: 205px;
-    }
 
-    &--devils-bridge {
-      margin-left: 0;
-    }
+      &:nth-child(4n + 1) {
+        margin-left: 0;
+      }
 
-    &--slide-park {
-      margin-left: 55px;
-    }
+      &:nth-child(4n + 2) {
+        margin-left: 55px;
+      }
 
-    &--mount-bell {
-      margin-left: 53px;
-    }
+      &:nth-child(4n + 3) {
+        margin-left: 53px;
+      }
 
-    &--red-rocks {
-      margin-left: 30px;
+      &:nth-child(4n + 4) {
+        margin-left: 30px;
+      }
     }
   }
 
