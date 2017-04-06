@@ -100,7 +100,7 @@
 }
 
 .feedback-form__radio-custom {
-  display: inline-block;
+  display: block;
   position: relative;
   width: 58px;
   height: 58px;
@@ -144,7 +144,7 @@
 }
 
 .feedback-form__checkbox-custom {
-  display: inline-block;
+  display: block;
   position: relative;
   width: 56px;
   height: 56px;
@@ -192,7 +192,7 @@
 }
 
 .feedback-form__field-input {
-  min-height: 58px;
+  height: 58px;
   width: 190px;
 
   border: 0;
@@ -200,7 +200,7 @@
   box-sizing: border-box;
   margin-left: 15px;
   padding-left: 20px;
-  box-sizing: padding-box;
+  box-sizing: border-box;
 
   font-family: $basic-font-family;
   font-size: 18px;
@@ -263,7 +263,7 @@
 }
 
 .feedback-form__field-icon {
-  display: inline-block;
+  // display: inline-block;
   border: 0;
 
   height: 58px;
@@ -390,10 +390,6 @@
     &--checkbox {
       margin-left: 24px;
     }
-
-    &--radio {
-      margin-left: 17px;
-    }
   }
 
 
@@ -508,7 +504,7 @@
     }
 
     &--radio {
-      margin-left: 5px;
+      margin-left: 0;
       margin-bottom: 20px;
     }
 
@@ -539,7 +535,7 @@
   }
 
   .feedback-form__error-message {
-    display: inline-block;
+    // display: inline-block;
     height: 26px;
     padding-top: 0;
     margin-left: auto;
@@ -599,7 +595,7 @@
     &--contacts {
       width: 960px;
       font-size: 0px;
-      padding-bottom: 27px;
+      padding-bottom: 30px;
     }
 
     &--sight {
@@ -623,7 +619,7 @@
 
     &--impression {
       width: 400px;
-      padding-left: 39px;
+      padding-left: 78px;
     }
 
     &--contacts {
@@ -641,7 +637,7 @@
     &--textarea {
       width: 960px;
       margin-top: 30px;
-      padding-top: 17px;
+      padding-top: 15px;
     }
   }
 

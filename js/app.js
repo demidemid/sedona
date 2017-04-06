@@ -3,7 +3,7 @@
   var menuMobile = document.querySelector(".main-menu");
   var menuClose = menuMobile.querySelector(".main-menu__cross-button");
 
-  menuMobile.classList.remove(".main-menu--no-js");
+  menuMobile.classList.remove("main-menu--no-js");
 
   menuOpen.addEventListener("click", function(event) {
     event.preventDefault();

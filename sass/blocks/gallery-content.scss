@@ -1,0 +1,14 @@
+@media #{$tablet-widths} {
+  .gallery-content {
+    width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+@media #{$desktop-widths} {
+  .gallery-content {
+    width: 1200px;
+  }
+}

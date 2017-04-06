@@ -69,13 +69,6 @@
 }
 
 @media #{$tablet-widths} {
-  .gallery-content {
-    width: 648px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-
   .picture {
     padding: 0;
     width: 324px;
@@ -140,7 +133,7 @@
     transform: translateY(-100%);
   }
 
-  .pictute__sign-block {
+  .picture__sign-block {
     padding-left: 20px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -154,10 +147,6 @@
 }
 
 @media #{$desktop-widths} {
-  .gallery-content {
-    width: 1200px;
-  }
-
   .picture {
     position: relative;
     padding: 0;

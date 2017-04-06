@@ -1,9 +1,9 @@
 .main-menu {
-  display: block;
+  display: none;
   min-width: 320px;
 
   &--no-js {
-    display: none;
+    display: block;
   }
 }
 

@@ -12,7 +12,7 @@
   margin: 0 auto;
 
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-color: #e4f1f9;
+  background-color: #6d879c;
   background-position: top;
   background-repeat: no-repeat;
 
@@ -28,8 +28,10 @@
     width: 100%;
 
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
 
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;

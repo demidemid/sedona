@@ -36,8 +36,10 @@
       width: 320px;
 
       top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
+      // left: 50%;
+      // transform: translateX(-50%);
 
       background-image: url("../img/bg-triangle.svg");
       background-repeat: no-repeat;
@@ -229,5 +231,9 @@
     &::after {
       right: 72px;
     }
+  }
+
+  .feature__not-only-br {
+    display: block;
   }
 }
