@@ -93,6 +93,27 @@
   &--checkbox {
     margin-top: 17px;
   }
+
+  &--devils-bridge {
+    order: 1;
+  }
+
+  &--slide-park {
+    order: 2;
+  }
+
+  &--mount-bell {
+    order: 3;
+  }
+
+  &--red-rocks {
+    order: 4;
+  }
+}
+
+.feedback-form__sight-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .feedback-form__selector {
@@ -195,11 +216,12 @@
   height: 58px;
   width: 190px;
 
-  border: 0;
+  border: 4px solid $form-input-bg-color;;
   background-color: $form-input-bg-color;
   box-sizing: border-box;
   margin-left: 15px;
-  padding-left: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
 
   font-family: $basic-font-family;
@@ -223,13 +245,11 @@
     margin-left: 0;
     margin-top: 17px;
     padding-top: 15px;
-
-    &:focus {
-      padding-top: 11px;
-    }
+    padding-bottom: 15px;
   }
 
   &:hover {
+    border: 4px solid #e5e5e5;
     background-color: #e5e5e5;
   }
 
@@ -263,7 +283,6 @@
 }
 
 .feedback-form__field-icon {
-  // display: inline-block;
   border: 0;
 
   height: 58px;
@@ -291,7 +310,6 @@
   font-weight: 400;
   color: #ff5c5c;
   text-transform: none;
-  // margin-top: 20px;
   padding-top: 5px;
   padding-left: 20px;
   box-sizing: border-box;
@@ -408,7 +426,6 @@
 
     &--textarea {
       width: 648px;
-      padding-top: 15px;
       margin-top: 30px;
       margin-left: 0;
     }
@@ -491,6 +508,7 @@
   }
 
   .feedback-form__field-label {
+    order: 0;
 
     &--padding {
       margin-top: 0;
@@ -498,44 +516,26 @@
       order: 1;
     }
 
-    &--checkbox {
-      width: 229px;
-      margin-bottom: 15px;
-    }
-
     &--radio {
       margin-left: 0;
       margin-bottom: 20px;
     }
 
-    &--devils-bridge {
-      order: 1;
-      margin-left: 95px;
-    }
+    &--checkbox {
+      width: 229px;
+      margin-bottom: 15px;
 
-    &--slide-park {
-      order: 3;
-      margin-left: 95px;
-    }
+      &:nth-child(odd) {
+        margin-left: 95px;
+      }
 
-    &--mount-bell {
-      order: 2;
-      margin-left: 30px;
+      &:nth-child(even) {
+        margin-left: 30px;
+      }
     }
-
-    &--red-rocks {
-      order: 4;
-      margin-left: 30px;
-    }
-  }
-
-  .feedback-form__sight-container {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .feedback-form__error-message {
-    // display: inline-block;
     height: 26px;
     padding-top: 0;
     margin-left: auto;
@@ -637,7 +637,6 @@
     &--textarea {
       width: 960px;
       margin-top: 30px;
-      padding-top: 15px;
     }
   }
 
